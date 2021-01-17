@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev.finance$ - Dashboard</title>
+
+    <link rel="icon" href="../images/logo.svg" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body class="box-border w-full bg-gray-200 font-poppins">
+    <header class="w-screen px-0 pt-8 pb-40 text-center bg-background">
+      <h1 class="text-3xl font-semibold text-white">dev.finance$</h1>
+    </header>
+
+    <main class="m-auto w-customContainer">
+      <section class="-mt-32">
+        <h2 class="mt-0 mb-4 text-3xl font-medium text-white">Balanço</h2>
+
+        <div class="shadow-sm card">
+          <h3 class="card-h3">Entradas</h3>
+          <p class="card-p">R$ 5.000,00</p>
+        </div>
+
+        <div class="shadow-sm card">
+          <h3 class="card-h3">Saídas</h3>
+          <p class="card-p">R$ 2.000,00</p>
+        </div>
+
+        <div class="text-white shadow-lg card bg-cardBackground">
+          <h3 class="card-h3">Total</h3>
+          <p class="card-p">R$ 3.000,00</p>
+        </div>
+      </section>
+
+      <section id="transaction">
+        <h2 class="mt-12 mb-3 text-3xl font-medium text-fontDefault">
+          Transações
+        </h2>
+        <table class="w-full border-none rounded-lg text-fontTable">
+          <thead>
+            <tr>
+              <th class="table-thead-th">Descrição</th>
+              <th class="table-thead-th">Valor</th>
+              <th class="table-thead-th">Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-tbody-tr">
+              <td class="text-fontDefault table-tbody-td">Luz</td>
+              <td class="font-bold text-expanse table-tbody-td">- R$ 500,00</td>
+              <td class="date table-tbody-td">23/01/2021</td>
+            </tr>
+            <tr class="table-tbody-tr">
+              <td class="text-fontDefault table-tbody-td">Criação website</td>
+              <td class="text-income table-tbody-td">R$ 5.000,00</td>
+              <td class="date table-tbody-td">23/01/2021</td>
+            </tr>
+            <tr class="table-tbody-tr">
+              <td class="text-fontDefault table-tbody-td">Internet</td>
+              <td class="font-bold text-expanse table-tbody-td">- R$ 200,00</td>
+              <td class="date table-tbody-td">23/01/2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="px-0 pt-16 pb-8 text-center opacity-60 text-fontDefault">
+      <p>dev.finance$</p>
+    </footer>
+  </body>
+</html>

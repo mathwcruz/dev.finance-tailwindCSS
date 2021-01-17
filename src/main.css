@@ -1,0 +1,54 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap";
+
+@tailwind base;
+
+.card {
+  @apply px-8 py-6 mb-8 bg-white rounded-md text-fontDefault;
+}
+
+.card-h3 {
+  @apply text-xl font-normal;
+}
+
+.card-p {
+  @apply mt-4 text-3xl leading-10;
+}
+
+.table-thead-th {
+  @apply px-8 py-4 text-xl font-normal text-left bg-white;
+}
+
+.table-tbody-tr {
+  @apply opacity-70;
+}
+
+.table-tbody-tr:hover {
+  @apply opacity-100;
+}
+
+.table-tbody-td {
+  @apply px-8 py-4 text-lg bg-white;
+}
+
+.social-icons {
+  @apply p-3 my-2 border border-black border-solid cursor-pointer rounded-2xl hover:opacity-80;
+}
+
+.input-mark {
+  @apply w-56 px-4 py-2 text-lg text-black placeholder-opacity-50 border-2 border-black rounded-lg outline-none placeholder-background sm:w-80 bg-none focus:border-cardBackground focus:text-background;
+}
+
+.terms-a {
+  @apply text-base font-semibold text-blue-600 sm:text-lg;
+}
+
+.active {
+  @apply visible opacity-100;
+}
+
+.btn {
+  @apply px-8 py-4 text-2xl font-semibold text-black transition duration-500 ease-in-out bg-gray-200 border border-solid rounded-lg shadow-xl outline-none border-background hover:bg-background hover:text-white hover:border-white;
+}
+
+@tailwind components;
+@tailwind utilities;
