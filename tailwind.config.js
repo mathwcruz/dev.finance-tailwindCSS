@@ -10,7 +10,7 @@ module.exports = {
         fontTable: "#969cb3",
         income: "#12a454",
         expanse: "#e92929",
-        backgroundModal: "rgba(0, 0, 0, 0.75)"
+        backgroundModal: "rgba(0, 0, 0, 0.8)"
       },
       fontFamily: {
         poppins: "Poppins"

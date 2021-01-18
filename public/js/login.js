@@ -1,24 +1,26 @@
 //Validação de login
 const buttonOpenModal = document.getElementById('buttonModal');
 
+let modalOverlay = document.getElementById('modal-overlay');
+
 buttonOpenModal.addEventListener('click', () => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
 
-  if (user.value == "" || password.value == "") {
-    var modalOverlay = document.getElementById('modal-overlay');
+  if (user.value === "" || password.value === "") {
+    modalOverlay.classList.remove('modal-inactive');
     modalOverlay.classList.add('active');
-    // return false;
   } else {
     user.value = "";
     password.value = "";
+    window.location.href = '../views/index.html';
   };
 
-  console.log("ta funfando?");
 })
 
 const buttonCloseModal = document.getElementById('try-again-button');
 
 buttonCloseModal.addEventListener('click', () => {
   modalOverlay.classList.remove('active');
+  modalOverlay.classList.add('modal-inactive');
 });

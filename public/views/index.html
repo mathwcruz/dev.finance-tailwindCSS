@@ -8,16 +8,36 @@
     <link rel="icon" href="../images/logo.svg" />
     <link rel="stylesheet" href="../assets/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="box-border w-full bg-gray-200 font-poppins">
-    <header class="w-screen px-0 pt-8 pb-40 text-center bg-background">
-      <h1 class="text-3xl font-semibold text-white">dev.finance$</h1>
+  <body class="box-border w-screen h-screen bg-gray-200 font-poppins">
+    <header
+      class="grid w-full grid-rows-2 px-0 pt-8 pb-40 text-center bg-background"
+    >
+      <h1 class="row-start-1 text-3xl font-semibold text-white">
+        dev.finance$
+      </h1>
+      <a
+        href="../views/login.html"
+        class="self-center row-start-2 p-1 mt-6 text-xl font-bold transition duration-300 ease-in-out bg-white rounded-lg cursor-pointer w-44 sm:p-2 sm:text-2xl sm:w-60 hover:bg-background hover:text-white text-fontDefault justify-self-center"
+      >
+        Sair da sessão
+      </a>
     </header>
 
     <main class="m-auto w-customContainer">
       <section class="-mt-32">
+        <div class="items-center justify-end hidden -mb-12 sm:flex">
+          <i
+            aria-hidden="true"
+            class="p-4 ml-4 text-2xl text-white fa fa-user-o"
+          ></i>
+          <p class="text-xl font-bold text-center text-white">Olá Matheus</p>
+        </div>
         <h2 class="mt-0 mb-4 text-3xl font-medium text-white">Balanço</h2>
-
         <div class="shadow-sm card">
           <h3 class="card-h3">Entradas</h3>
           <p class="card-p">R$ 5.000,00</p>
