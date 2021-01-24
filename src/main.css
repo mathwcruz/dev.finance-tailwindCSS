@@ -3,23 +3,27 @@
 @tailwind base;
 
 .card {
-  @apply px-8 py-6 mb-8 bg-white rounded-md text-fontDefault;
+  @apply px-8 py-6 mb-8 bg-white rounded-md shadow-sm text-fontDefault ;
 }
 
 .card-h3 {
-  @apply text-xl font-normal;
+  @apply flex items-center justify-between text-xl font-normal font-semibold;
 }
 
 .card-p {
   @apply mt-4 text-3xl leading-10;
 }
 
+.btn-new-transaction {
+  @apply inline-block mb-3 text-lg font-semibold text-black hover:text-income;
+}
+
 .table-thead-th {
-  @apply px-8 py-4 text-xl font-normal text-left bg-white;
+  @apply px-8 py-4 text-xl font-normal text-center bg-white;
 }
 
 .table-tbody-tr {
-  @apply opacity-70;
+  @apply border-b opacity-70 border-fontDefault;
 }
 
 .table-tbody-tr:hover {
@@ -27,7 +31,7 @@
 }
 
 .table-tbody-td {
-  @apply px-8 py-4 text-lg bg-white;
+  @apply px-8 py-4 text-lg text-center bg-white;
 }
 
 .social-icons {

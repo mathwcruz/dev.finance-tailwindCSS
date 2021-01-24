@@ -562,7 +562,11 @@ video {
 }
 
 .card-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 400;
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -572,6 +576,21 @@ video {
   line-height: 2.25rem;
   line-height: 2.5rem;
   margin-top: 1rem;
+}
+
+.btn-new-transaction {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.btn-new-transaction:hover{
+  --tw-text-opacity: 1;
+  color: rgba(18, 164, 84, var(--tw-text-opacity));
 }
 
 .table-thead-th {
@@ -584,10 +603,13 @@ video {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 .table-tbody-tr {
+  --tw-border-opacity: 1;
+  border-color: rgba(54, 63, 95, var(--tw-border-opacity));
+  border-bottom-width: 1px;
   opacity: 0.7;
 }
 
@@ -604,6 +626,7 @@ video {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  text-align: center;
 }
 
 .social-icons {

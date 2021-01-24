@@ -6,6 +6,7 @@
     <title>dev.finance$ - Dashboard</title>
 
     <link rel="icon" href="../images/logo.svg" />
+    <link rel="stylesheet" href="../../src/loading.css" />
     <link rel="stylesheet" href="../assets/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script
@@ -17,9 +18,11 @@
     <header
       class="grid w-full grid-rows-2 px-0 pt-8 pb-40 text-center bg-background"
     >
-      <h1 class="row-start-1 text-3xl font-semibold text-white">
-        dev.finance$
-      </h1>
+      <img
+        class="self-center justify-self-center"
+        src="../images/logo.svg"
+        alt="Logo dev.finance$"
+      />
       <a
         href="../views/login.html"
         class="self-center row-start-2 p-1 mt-6 text-xl font-bold transition duration-300 ease-in-out bg-white rounded-lg cursor-pointer w-44 sm:p-2 sm:text-2xl sm:w-60 hover:bg-background hover:text-white text-fontDefault justify-self-center"
@@ -29,7 +32,7 @@
     </header>
 
     <main class="m-auto w-customContainer">
-      <section class="-mt-32">
+      <section class="-mt-20 md:-mt-24">
         <div class="items-center justify-end hidden -mb-12 sm:flex">
           <i
             aria-hidden="true"
@@ -37,50 +40,74 @@
           ></i>
           <p class="text-xl font-bold text-center text-white">Olá Matheus</p>
         </div>
-        <h2 class="mt-0 mb-4 text-3xl font-medium text-white">Balanço</h2>
-        <div class="shadow-sm card">
-          <h3 class="card-h3">Entradas</h3>
-          <p class="card-p">R$ 5.000,00</p>
-        </div>
+        <div class="md:gap-8 md:grid md:grid-cols-3">
+          <h2 class="hidden mt-0 mb-4 text-3xl font-medium text-white">
+            Balanço
+          </h2>
+          <div class="shadow-sm card">
+            <h3 class="card-h3">
+              <span>Entradas</span>
+              <img class="ml-2" src="../images/income.svg" alt="Imagem de entrada de saldo">
+            </h3>
+            <p class="card-p">R$ 5.000,00</p>
+          </div>
 
-        <div class="shadow-sm card">
-          <h3 class="card-h3">Saídas</h3>
-          <p class="card-p">R$ 2.000,00</p>
-        </div>
+          <div class="card">
+            <h3 class="card-h3">
+              <span>Saídas</span>
+              <img class="ml-2" src="../images/expense.svg" alt="Imagem de saída">
+            </h3>
+            <p class="card-p">R$ 2.000,00</p>
+          </div>
 
-        <div class="text-white shadow-lg card bg-cardBackground">
-          <h3 class="card-h3">Total</h3>
-          <p class="card-p">R$ 3.000,00</p>
-        </div>
+          <div class="text-white shadow-lg card bg-cardBackground">
+            <h3 class="card-h3">
+              <span>Total</span>
+              <img class="ml-2" src="../images/total.svg" alt="Imagem de saldo total">
+            </h3>
+            <p class="card-p">R$ 3.000,00</p>
+          </div>
+        </div>  
       </section>
 
-      <section id="transaction">
-        <h2 class="mt-12 mb-3 text-3xl font-medium text-fontDefault">
+      <section class="block w-full overflow-x-auto">
+        <h2 class="hidden mt-12 mb-3 text-3xl font-medium text-fontDefault">
           Transações
         </h2>
-        <table class="w-full border-none rounded-lg text-fontTable">
+        <a class="btn-new-transaction" href="#">+ Nova transação</a>
+        <table class="w-full border-none text-fontTable">
           <thead>
             <tr>
               <th class="table-thead-th">Descrição</th>
               <th class="table-thead-th">Valor</th>
               <th class="table-thead-th">Data</th>
+              <th class="table-thead-th"></th>
             </tr>
           </thead>
           <tbody>
-            <tr class="table-tbody-tr">
+            <tr class="border-t table-tbody-tr border-fontDefault">
               <td class="text-fontDefault table-tbody-td">Luz</td>
               <td class="font-bold text-expanse table-tbody-td">- R$ 500,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
+              <td class="table-tbody-td">
+                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+              </td>
             </tr>
             <tr class="table-tbody-tr">
               <td class="text-fontDefault table-tbody-td">Criação website</td>
               <td class="text-income table-tbody-td">R$ 5.000,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
+              <td class="table-tbody-td">
+                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+              </td>
             </tr>
             <tr class="table-tbody-tr">
               <td class="text-fontDefault table-tbody-td">Internet</td>
               <td class="font-bold text-expanse table-tbody-td">- R$ 200,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
+              <td class="table-tbody-td">
+                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+              </td>
             </tr>
           </tbody>
         </table>
@@ -90,5 +117,7 @@
     <footer class="px-0 pt-16 pb-8 text-center opacity-60 text-fontDefault">
       <p>dev.finance$</p>
     </footer>
+
+    <script src="../../src/loading.js"></script>
   </body>
 </html>
