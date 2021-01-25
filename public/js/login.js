@@ -1,13 +1,12 @@
 //Validação de login
 const buttonOpenModal = document.getElementById('buttonModal');
-let inputPolicyAndTerms = document.getElementById('polycy&terms');
 let modalOverlay = document.getElementById('modal-overlay');
 
 buttonOpenModal.addEventListener('click', () => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
 
-  if (user.value === "" || password.value === "" || !inputPolicyAndTerms.checked) {
+  if (user.value === "" || password.value === "") {
     modalOverlay.classList.remove('modal-inactive');
     modalOverlay.classList.add('active');
   } else {

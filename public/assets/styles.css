@@ -598,7 +598,7 @@ video {
 .table-thead-th {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding-top: 1rem;
@@ -649,7 +649,7 @@ video {
 
 .input-mark:focus{
   --tw-border-opacity: 1;
-  border-color: rgba(73, 170, 38, var(--tw-border-opacity));
+  border-color: rgba(45, 74, 34, var(--tw-border-opacity));
 }
 
 .input-mark{
@@ -801,6 +801,35 @@ main {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+
+.input-group-modal {
+  margin-top: 0.75rem;
+}
+
+.input-modal:focus{
+  --tw-border-opacity: 1;
+  border-color: rgba(45, 74, 34, var(--tw-border-opacity));
+}
+
+.input-modal{
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+/* CSS PURO */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .container{
@@ -2186,6 +2215,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
 }
 
+.divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+}
+
 .divide-fontTable > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -2202,7 +2236,7 @@ main {
 }
 
 .divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -2822,6 +2856,11 @@ main {
   background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
 }
 
+.bg-cardBackgroundLight{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+}
+
 .bg-fontTable{
   --tw-bg-opacity: 1;
   background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -2838,7 +2877,7 @@ main {
 }
 
 .bg-backgroundModal{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .group:hover .group-hover\:bg-transparent{
@@ -3274,6 +3313,11 @@ main {
   background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:bg-cardBackgroundLight{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:bg-fontTable{
   --tw-bg-opacity: 1;
   background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -3290,7 +3334,7 @@ main {
 }
 
 .group:hover .group-hover\:bg-backgroundModal{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus-within\:bg-transparent:focus-within{
@@ -3726,6 +3770,11 @@ main {
   background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
 }
 
+.focus-within\:bg-cardBackgroundLight:focus-within{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+}
+
 .focus-within\:bg-fontTable:focus-within{
   --tw-bg-opacity: 1;
   background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -3742,7 +3791,7 @@ main {
 }
 
 .focus-within\:bg-backgroundModal:focus-within{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hover\:bg-transparent:hover{
@@ -4178,6 +4227,11 @@ main {
   background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
 }
 
+.hover\:bg-cardBackgroundLight:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+}
+
 .hover\:bg-fontTable:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -4194,7 +4248,7 @@ main {
 }
 
 .hover\:bg-backgroundModal:hover{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:bg-transparent:focus{
@@ -4630,6 +4684,11 @@ main {
   background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
 }
 
+.focus\:bg-cardBackgroundLight:focus{
+  --tw-bg-opacity: 1;
+  background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+}
+
 .focus\:bg-fontTable:focus{
   --tw-bg-opacity: 1;
   background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -4646,7 +4705,7 @@ main {
 }
 
 .focus\:bg-backgroundModal:focus{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bg-none{
@@ -5120,6 +5179,11 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.from-cardBackgroundLight{
+  --tw-gradient-from: #3dd705;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .from-fontTable{
   --tw-gradient-from: #969cb3;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -5136,7 +5200,7 @@ main {
 }
 
 .from-backgroundModal{
-  --tw-gradient-from: rgba(0, 0, 0, 0.8);
+  --tw-gradient-from: rgba(0, 0, 0, 0.7);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
@@ -5488,6 +5552,10 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.via-cardBackgroundLight{
+  --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .via-fontTable{
   --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
 }
@@ -5501,7 +5569,7 @@ main {
 }
 
 .via-backgroundModal{
-  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
 .to-transparent{
@@ -5852,6 +5920,10 @@ main {
   --tw-gradient-to: #49AA26;
 }
 
+.to-cardBackgroundLight{
+  --tw-gradient-to: #3dd705;
+}
+
 .to-fontTable{
   --tw-gradient-to: #969cb3;
 }
@@ -5865,7 +5937,7 @@ main {
 }
 
 .to-backgroundModal{
-  --tw-gradient-to: rgba(0, 0, 0, 0.8);
+  --tw-gradient-to: rgba(0, 0, 0, 0.7);
 }
 
 .hover\:from-transparent:hover{
@@ -6303,6 +6375,11 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.hover\:from-cardBackgroundLight:hover{
+  --tw-gradient-from: #3dd705;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .hover\:from-fontTable:hover{
   --tw-gradient-from: #969cb3;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -6319,7 +6396,7 @@ main {
 }
 
 .hover\:from-backgroundModal:hover{
-  --tw-gradient-from: rgba(0, 0, 0, 0.8);
+  --tw-gradient-from: rgba(0, 0, 0, 0.7);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
@@ -6671,6 +6748,10 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.hover\:via-cardBackgroundLight:hover{
+  --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .hover\:via-fontTable:hover{
   --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
 }
@@ -6684,7 +6765,7 @@ main {
 }
 
 .hover\:via-backgroundModal:hover{
-  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
 .hover\:to-transparent:hover{
@@ -7035,6 +7116,10 @@ main {
   --tw-gradient-to: #49AA26;
 }
 
+.hover\:to-cardBackgroundLight:hover{
+  --tw-gradient-to: #3dd705;
+}
+
 .hover\:to-fontTable:hover{
   --tw-gradient-to: #969cb3;
 }
@@ -7048,7 +7133,7 @@ main {
 }
 
 .hover\:to-backgroundModal:hover{
-  --tw-gradient-to: rgba(0, 0, 0, 0.8);
+  --tw-gradient-to: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:from-transparent:focus{
@@ -7486,6 +7571,11 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.focus\:from-cardBackgroundLight:focus{
+  --tw-gradient-from: #3dd705;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .focus\:from-fontTable:focus{
   --tw-gradient-from: #969cb3;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -7502,7 +7592,7 @@ main {
 }
 
 .focus\:from-backgroundModal:focus{
-  --tw-gradient-from: rgba(0, 0, 0, 0.8);
+  --tw-gradient-from: rgba(0, 0, 0, 0.7);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
@@ -7854,6 +7944,10 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
 }
 
+.focus\:via-cardBackgroundLight:focus{
+  --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+}
+
 .focus\:via-fontTable:focus{
   --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
 }
@@ -7867,7 +7961,7 @@ main {
 }
 
 .focus\:via-backgroundModal:focus{
-  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
 
 .focus\:to-transparent:focus{
@@ -8218,6 +8312,10 @@ main {
   --tw-gradient-to: #49AA26;
 }
 
+.focus\:to-cardBackgroundLight:focus{
+  --tw-gradient-to: #3dd705;
+}
+
 .focus\:to-fontTable:focus{
   --tw-gradient-to: #969cb3;
 }
@@ -8231,7 +8329,7 @@ main {
 }
 
 .focus\:to-backgroundModal:focus{
-  --tw-gradient-to: rgba(0, 0, 0, 0.8);
+  --tw-gradient-to: rgba(0, 0, 0, 0.7);
 }
 
 .bg-opacity-0{
@@ -9047,6 +9145,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-border-opacity));
 }
 
+.border-cardBackgroundLight{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+}
+
 .border-fontTable{
   --tw-border-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -9063,7 +9166,7 @@ main {
 }
 
 .border-backgroundModal{
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .group:hover .group-hover\:border-transparent{
@@ -9499,6 +9602,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-border-opacity));
 }
 
+.group:hover .group-hover\:border-cardBackgroundLight{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+}
+
 .group:hover .group-hover\:border-fontTable{
   --tw-border-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -9515,7 +9623,7 @@ main {
 }
 
 .group:hover .group-hover\:border-backgroundModal{
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus-within\:border-transparent:focus-within{
@@ -9951,6 +10059,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-border-opacity));
 }
 
+.focus-within\:border-cardBackgroundLight:focus-within{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+}
+
 .focus-within\:border-fontTable:focus-within{
   --tw-border-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -9967,7 +10080,7 @@ main {
 }
 
 .focus-within\:border-backgroundModal:focus-within{
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .hover\:border-transparent:hover{
@@ -10403,6 +10516,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-border-opacity));
 }
 
+.hover\:border-cardBackgroundLight:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+}
+
 .hover\:border-fontTable:hover{
   --tw-border-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -10419,7 +10537,7 @@ main {
 }
 
 .hover\:border-backgroundModal:hover{
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:border-transparent:focus{
@@ -10855,6 +10973,11 @@ main {
   border-color: rgba(73, 170, 38, var(--tw-border-opacity));
 }
 
+.focus\:border-cardBackgroundLight:focus{
+  --tw-border-opacity: 1;
+  border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+}
+
 .focus\:border-fontTable:focus{
   --tw-border-opacity: 1;
   border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -10871,7 +10994,7 @@ main {
 }
 
 .focus\:border-backgroundModal:focus{
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .border-opacity-0{
@@ -17768,6 +17891,21 @@ main {
   color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
 }
 
+.placeholder-cardBackgroundLight::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
+.placeholder-cardBackgroundLight:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
+.placeholder-cardBackgroundLight::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
 .placeholder-fontTable::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -17814,15 +17952,15 @@ main {
 }
 
 .placeholder-backgroundModal::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .placeholder-backgroundModal:-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .placeholder-backgroundModal::placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -19124,6 +19262,21 @@ main {
   color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
 }
 
+.focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-cardBackgroundLight:focus::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+}
+
 .focus\:placeholder-fontTable:focus::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -19170,15 +19323,15 @@ main {
 }
 
 .focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:placeholder-backgroundModal:focus::placeholder{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .placeholder-opacity-0::-moz-placeholder{
@@ -23072,6 +23225,10 @@ main {
   --tw-ring-offset-color: #49AA26;
 }
 
+.ring-offset-cardBackgroundLight{
+  --tw-ring-offset-color: #3dd705;
+}
+
 .ring-offset-fontTable{
   --tw-ring-offset-color: #969cb3;
 }
@@ -23085,7 +23242,7 @@ main {
 }
 
 .ring-offset-backgroundModal{
-  --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus-within\:ring-offset-transparent:focus-within{
@@ -23436,6 +23593,10 @@ main {
   --tw-ring-offset-color: #49AA26;
 }
 
+.focus-within\:ring-offset-cardBackgroundLight:focus-within{
+  --tw-ring-offset-color: #3dd705;
+}
+
 .focus-within\:ring-offset-fontTable:focus-within{
   --tw-ring-offset-color: #969cb3;
 }
@@ -23449,7 +23610,7 @@ main {
 }
 
 .focus-within\:ring-offset-backgroundModal:focus-within{
-  --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:ring-offset-transparent:focus{
@@ -23800,6 +23961,10 @@ main {
   --tw-ring-offset-color: #49AA26;
 }
 
+.focus\:ring-offset-cardBackgroundLight:focus{
+  --tw-ring-offset-color: #3dd705;
+}
+
 .focus\:ring-offset-fontTable:focus{
   --tw-ring-offset-color: #969cb3;
 }
@@ -23813,7 +23978,7 @@ main {
 }
 
 .focus\:ring-offset-backgroundModal:focus{
-  --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
 }
 
 .ring-offset-0{
@@ -24309,6 +24474,11 @@ main {
   --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
 }
 
+.ring-cardBackgroundLight{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+}
+
 .ring-fontTable{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -24325,7 +24495,7 @@ main {
 }
 
 .ring-backgroundModal{
-  --tw-ring-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus-within\:ring-transparent:focus-within{
@@ -24761,6 +24931,11 @@ main {
   --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
 }
 
+.focus-within\:ring-cardBackgroundLight:focus-within{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+}
+
 .focus-within\:ring-fontTable:focus-within{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -24777,7 +24952,7 @@ main {
 }
 
 .focus-within\:ring-backgroundModal:focus-within{
-  --tw-ring-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:ring-transparent:focus{
@@ -25213,6 +25388,11 @@ main {
   --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
 }
 
+.focus\:ring-cardBackgroundLight:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+}
+
 .focus\:ring-fontTable:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -25229,7 +25409,7 @@ main {
 }
 
 .focus\:ring-backgroundModal:focus{
-  --tw-ring-color: rgba(0, 0, 0, 0.8);
+  --tw-ring-color: rgba(0, 0, 0, 0.7);
 }
 
 .ring-opacity-0{
@@ -25889,6 +26069,11 @@ main {
   color: rgba(73, 170, 38, var(--tw-text-opacity));
 }
 
+.text-cardBackgroundLight{
+  --tw-text-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-text-opacity));
+}
+
 .text-fontTable{
   --tw-text-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -25905,7 +26090,7 @@ main {
 }
 
 .text-backgroundModal{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .group:hover .group-hover\:text-transparent{
@@ -26341,6 +26526,11 @@ main {
   color: rgba(73, 170, 38, var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-cardBackgroundLight{
+  --tw-text-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-fontTable{
   --tw-text-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -26357,7 +26547,7 @@ main {
 }
 
 .group:hover .group-hover\:text-backgroundModal{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .focus-within\:text-transparent:focus-within{
@@ -26793,6 +26983,11 @@ main {
   color: rgba(73, 170, 38, var(--tw-text-opacity));
 }
 
+.focus-within\:text-cardBackgroundLight:focus-within{
+  --tw-text-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-text-opacity));
+}
+
 .focus-within\:text-fontTable:focus-within{
   --tw-text-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -26809,7 +27004,7 @@ main {
 }
 
 .focus-within\:text-backgroundModal:focus-within{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .hover\:text-transparent:hover{
@@ -27245,6 +27440,11 @@ main {
   color: rgba(73, 170, 38, var(--tw-text-opacity));
 }
 
+.hover\:text-cardBackgroundLight:hover{
+  --tw-text-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-text-opacity));
+}
+
 .hover\:text-fontTable:hover{
   --tw-text-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -27261,7 +27461,7 @@ main {
 }
 
 .hover\:text-backgroundModal:hover{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .focus\:text-transparent:focus{
@@ -27697,6 +27897,11 @@ main {
   color: rgba(73, 170, 38, var(--tw-text-opacity));
 }
 
+.focus\:text-cardBackgroundLight:focus{
+  --tw-text-opacity: 1;
+  color: rgba(61, 215, 5, var(--tw-text-opacity));
+}
+
 .focus\:text-fontTable:focus{
   --tw-text-opacity: 1;
   color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -27713,7 +27918,7 @@ main {
 }
 
 .focus\:text-backgroundModal:focus{
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .text-opacity-0{
@@ -34027,6 +34232,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
   }
 
+  .sm\:divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+  }
+
   .sm\:divide-fontTable > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -34043,7 +34253,7 @@ main {
   }
 
   .sm\:divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -34663,6 +34873,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .sm\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .sm\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -34679,7 +34894,7 @@ main {
   }
 
   .sm\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .sm\:group-hover\:bg-transparent{
@@ -35115,6 +35330,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .group:hover .sm\:group-hover\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .group:hover .sm\:group-hover\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -35131,7 +35351,7 @@ main {
   }
 
   .group:hover .sm\:group-hover\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus-within\:bg-transparent:focus-within{
@@ -35567,6 +35787,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .sm\:focus-within\:bg-cardBackgroundLight:focus-within{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .sm\:focus-within\:bg-fontTable:focus-within{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -35583,7 +35808,7 @@ main {
   }
 
   .sm\:focus-within\:bg-backgroundModal:focus-within{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:hover\:bg-transparent:hover{
@@ -36019,6 +36244,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .sm\:hover\:bg-cardBackgroundLight:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .sm\:hover\:bg-fontTable:hover{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -36035,7 +36265,7 @@ main {
   }
 
   .sm\:hover\:bg-backgroundModal:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:bg-transparent:focus{
@@ -36471,6 +36701,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .sm\:focus\:bg-cardBackgroundLight:focus{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .sm\:focus\:bg-fontTable:focus{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -36487,7 +36722,7 @@ main {
   }
 
   .sm\:focus\:bg-backgroundModal:focus{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:bg-none{
@@ -36961,6 +37196,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:from-cardBackgroundLight{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:from-fontTable{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -36977,7 +37217,7 @@ main {
   }
 
   .sm\:from-backgroundModal{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -37329,6 +37569,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:via-cardBackgroundLight{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:via-fontTable{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -37342,7 +37586,7 @@ main {
   }
 
   .sm\:via-backgroundModal{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .sm\:to-transparent{
@@ -37693,6 +37937,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .sm\:to-cardBackgroundLight{
+    --tw-gradient-to: #3dd705;
+  }
+
   .sm\:to-fontTable{
     --tw-gradient-to: #969cb3;
   }
@@ -37706,7 +37954,7 @@ main {
   }
 
   .sm\:to-backgroundModal{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:hover\:from-transparent:hover{
@@ -38144,6 +38392,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:hover\:from-cardBackgroundLight:hover{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:hover\:from-fontTable:hover{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -38160,7 +38413,7 @@ main {
   }
 
   .sm\:hover\:from-backgroundModal:hover{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -38512,6 +38765,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:hover\:via-cardBackgroundLight:hover{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:hover\:via-fontTable:hover{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -38525,7 +38782,7 @@ main {
   }
 
   .sm\:hover\:via-backgroundModal:hover{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .sm\:hover\:to-transparent:hover{
@@ -38876,6 +39133,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .sm\:hover\:to-cardBackgroundLight:hover{
+    --tw-gradient-to: #3dd705;
+  }
+
   .sm\:hover\:to-fontTable:hover{
     --tw-gradient-to: #969cb3;
   }
@@ -38889,7 +39150,7 @@ main {
   }
 
   .sm\:hover\:to-backgroundModal:hover{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:from-transparent:focus{
@@ -39327,6 +39588,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:focus\:from-cardBackgroundLight:focus{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:focus\:from-fontTable:focus{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -39343,7 +39609,7 @@ main {
   }
 
   .sm\:focus\:from-backgroundModal:focus{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -39695,6 +39961,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .sm\:focus\:via-cardBackgroundLight:focus{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .sm\:focus\:via-fontTable:focus{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -39708,7 +39978,7 @@ main {
   }
 
   .sm\:focus\:via-backgroundModal:focus{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .sm\:focus\:to-transparent:focus{
@@ -40059,6 +40329,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .sm\:focus\:to-cardBackgroundLight:focus{
+    --tw-gradient-to: #3dd705;
+  }
+
   .sm\:focus\:to-fontTable:focus{
     --tw-gradient-to: #969cb3;
   }
@@ -40072,7 +40346,7 @@ main {
   }
 
   .sm\:focus\:to-backgroundModal:focus{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:bg-opacity-0{
@@ -40888,6 +41162,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .sm\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .sm\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -40904,7 +41183,7 @@ main {
   }
 
   .sm\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .sm\:group-hover\:border-transparent{
@@ -41340,6 +41619,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .group:hover .sm\:group-hover\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .group:hover .sm\:group-hover\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -41356,7 +41640,7 @@ main {
   }
 
   .group:hover .sm\:group-hover\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus-within\:border-transparent:focus-within{
@@ -41792,6 +42076,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .sm\:focus-within\:border-cardBackgroundLight:focus-within{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .sm\:focus-within\:border-fontTable:focus-within{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -41808,7 +42097,7 @@ main {
   }
 
   .sm\:focus-within\:border-backgroundModal:focus-within{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:hover\:border-transparent:hover{
@@ -42244,6 +42533,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .sm\:hover\:border-cardBackgroundLight:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .sm\:hover\:border-fontTable:hover{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -42260,7 +42554,7 @@ main {
   }
 
   .sm\:hover\:border-backgroundModal:hover{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:border-transparent:focus{
@@ -42696,6 +42990,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .sm\:focus\:border-cardBackgroundLight:focus{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .sm\:focus\:border-fontTable:focus{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -42712,7 +43011,7 @@ main {
   }
 
   .sm\:focus\:border-backgroundModal:focus{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:border-opacity-0{
@@ -49609,6 +49908,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .sm\:placeholder-cardBackgroundLight::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-cardBackgroundLight:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-cardBackgroundLight::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .sm\:placeholder-fontTable::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -49655,15 +49969,15 @@ main {
   }
 
   .sm\:placeholder-backgroundModal::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:placeholder-backgroundModal:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:placeholder-backgroundModal::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -50965,6 +51279,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .sm\:focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-cardBackgroundLight:focus::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .sm\:focus\:placeholder-fontTable:focus::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -51011,15 +51340,15 @@ main {
   }
 
   .sm\:focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:placeholder-backgroundModal:focus::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder{
@@ -54900,6 +55229,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .sm\:ring-offset-cardBackgroundLight{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .sm\:ring-offset-fontTable{
     --tw-ring-offset-color: #969cb3;
   }
@@ -54913,7 +55246,7 @@ main {
   }
 
   .sm\:ring-offset-backgroundModal{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus-within\:ring-offset-transparent:focus-within{
@@ -55264,6 +55597,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .sm\:focus-within\:ring-offset-cardBackgroundLight:focus-within{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .sm\:focus-within\:ring-offset-fontTable:focus-within{
     --tw-ring-offset-color: #969cb3;
   }
@@ -55277,7 +55614,7 @@ main {
   }
 
   .sm\:focus-within\:ring-offset-backgroundModal:focus-within{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:ring-offset-transparent:focus{
@@ -55628,6 +55965,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .sm\:focus\:ring-offset-cardBackgroundLight:focus{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .sm\:focus\:ring-offset-fontTable:focus{
     --tw-ring-offset-color: #969cb3;
   }
@@ -55641,7 +55982,7 @@ main {
   }
 
   .sm\:focus\:ring-offset-backgroundModal:focus{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:ring-offset-0{
@@ -56137,6 +56478,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .sm\:ring-cardBackgroundLight{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .sm\:ring-fontTable{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -56153,7 +56499,7 @@ main {
   }
 
   .sm\:ring-backgroundModal{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus-within\:ring-transparent:focus-within{
@@ -56589,6 +56935,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .sm\:focus-within\:ring-cardBackgroundLight:focus-within{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .sm\:focus-within\:ring-fontTable:focus-within{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -56605,7 +56956,7 @@ main {
   }
 
   .sm\:focus-within\:ring-backgroundModal:focus-within{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:ring-transparent:focus{
@@ -57041,6 +57392,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .sm\:focus\:ring-cardBackgroundLight:focus{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .sm\:focus\:ring-fontTable:focus{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -57057,7 +57413,7 @@ main {
   }
 
   .sm\:focus\:ring-backgroundModal:focus{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:ring-opacity-0{
@@ -57717,6 +58073,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .sm\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .sm\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -57733,7 +58094,7 @@ main {
   }
 
   .sm\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .sm\:group-hover\:text-transparent{
@@ -58169,6 +58530,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .group:hover .sm\:group-hover\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .group:hover .sm\:group-hover\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -58185,7 +58551,7 @@ main {
   }
 
   .group:hover .sm\:group-hover\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus-within\:text-transparent:focus-within{
@@ -58621,6 +58987,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .sm\:focus-within\:text-cardBackgroundLight:focus-within{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .sm\:focus-within\:text-fontTable:focus-within{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -58637,7 +59008,7 @@ main {
   }
 
   .sm\:focus-within\:text-backgroundModal:focus-within{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:hover\:text-transparent:hover{
@@ -59073,6 +59444,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .sm\:hover\:text-cardBackgroundLight:hover{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .sm\:hover\:text-fontTable:hover{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -59089,7 +59465,7 @@ main {
   }
 
   .sm\:hover\:text-backgroundModal:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:focus\:text-transparent:focus{
@@ -59525,6 +59901,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .sm\:focus\:text-cardBackgroundLight:focus{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .sm\:focus\:text-fontTable:focus{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -59541,7 +59922,7 @@ main {
   }
 
   .sm\:focus\:text-backgroundModal:focus{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .sm\:text-opacity-0{
@@ -65790,6 +66171,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
   }
 
+  .md\:divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+  }
+
   .md\:divide-fontTable > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -65806,7 +66192,7 @@ main {
   }
 
   .md\:divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -66426,6 +66812,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .md\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .md\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -66442,7 +66833,7 @@ main {
   }
 
   .md\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .md\:group-hover\:bg-transparent{
@@ -66878,6 +67269,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .group:hover .md\:group-hover\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .group:hover .md\:group-hover\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -66894,7 +67290,7 @@ main {
   }
 
   .group:hover .md\:group-hover\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus-within\:bg-transparent:focus-within{
@@ -67330,6 +67726,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .md\:focus-within\:bg-cardBackgroundLight:focus-within{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .md\:focus-within\:bg-fontTable:focus-within{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -67346,7 +67747,7 @@ main {
   }
 
   .md\:focus-within\:bg-backgroundModal:focus-within{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:hover\:bg-transparent:hover{
@@ -67782,6 +68183,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .md\:hover\:bg-cardBackgroundLight:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .md\:hover\:bg-fontTable:hover{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -67798,7 +68204,7 @@ main {
   }
 
   .md\:hover\:bg-backgroundModal:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:bg-transparent:focus{
@@ -68234,6 +68640,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .md\:focus\:bg-cardBackgroundLight:focus{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .md\:focus\:bg-fontTable:focus{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -68250,7 +68661,7 @@ main {
   }
 
   .md\:focus\:bg-backgroundModal:focus{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:bg-none{
@@ -68724,6 +69135,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:from-cardBackgroundLight{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:from-fontTable{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -68740,7 +69156,7 @@ main {
   }
 
   .md\:from-backgroundModal{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -69092,6 +69508,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:via-cardBackgroundLight{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:via-fontTable{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -69105,7 +69525,7 @@ main {
   }
 
   .md\:via-backgroundModal{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .md\:to-transparent{
@@ -69456,6 +69876,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .md\:to-cardBackgroundLight{
+    --tw-gradient-to: #3dd705;
+  }
+
   .md\:to-fontTable{
     --tw-gradient-to: #969cb3;
   }
@@ -69469,7 +69893,7 @@ main {
   }
 
   .md\:to-backgroundModal{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .md\:hover\:from-transparent:hover{
@@ -69907,6 +70331,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:hover\:from-cardBackgroundLight:hover{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:hover\:from-fontTable:hover{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -69923,7 +70352,7 @@ main {
   }
 
   .md\:hover\:from-backgroundModal:hover{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -70275,6 +70704,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:hover\:via-cardBackgroundLight:hover{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:hover\:via-fontTable:hover{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -70288,7 +70721,7 @@ main {
   }
 
   .md\:hover\:via-backgroundModal:hover{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .md\:hover\:to-transparent:hover{
@@ -70639,6 +71072,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .md\:hover\:to-cardBackgroundLight:hover{
+    --tw-gradient-to: #3dd705;
+  }
+
   .md\:hover\:to-fontTable:hover{
     --tw-gradient-to: #969cb3;
   }
@@ -70652,7 +71089,7 @@ main {
   }
 
   .md\:hover\:to-backgroundModal:hover{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:from-transparent:focus{
@@ -71090,6 +71527,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:focus\:from-cardBackgroundLight:focus{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:focus\:from-fontTable:focus{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -71106,7 +71548,7 @@ main {
   }
 
   .md\:focus\:from-backgroundModal:focus{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -71458,6 +71900,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .md\:focus\:via-cardBackgroundLight:focus{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .md\:focus\:via-fontTable:focus{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -71471,7 +71917,7 @@ main {
   }
 
   .md\:focus\:via-backgroundModal:focus{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .md\:focus\:to-transparent:focus{
@@ -71822,6 +72268,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .md\:focus\:to-cardBackgroundLight:focus{
+    --tw-gradient-to: #3dd705;
+  }
+
   .md\:focus\:to-fontTable:focus{
     --tw-gradient-to: #969cb3;
   }
@@ -71835,7 +72285,7 @@ main {
   }
 
   .md\:focus\:to-backgroundModal:focus{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .md\:bg-opacity-0{
@@ -72651,6 +73101,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .md\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .md\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -72667,7 +73122,7 @@ main {
   }
 
   .md\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .md\:group-hover\:border-transparent{
@@ -73103,6 +73558,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .group:hover .md\:group-hover\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .group:hover .md\:group-hover\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -73119,7 +73579,7 @@ main {
   }
 
   .group:hover .md\:group-hover\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus-within\:border-transparent:focus-within{
@@ -73555,6 +74015,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .md\:focus-within\:border-cardBackgroundLight:focus-within{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .md\:focus-within\:border-fontTable:focus-within{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -73571,7 +74036,7 @@ main {
   }
 
   .md\:focus-within\:border-backgroundModal:focus-within{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:hover\:border-transparent:hover{
@@ -74007,6 +74472,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .md\:hover\:border-cardBackgroundLight:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .md\:hover\:border-fontTable:hover{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -74023,7 +74493,7 @@ main {
   }
 
   .md\:hover\:border-backgroundModal:hover{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:border-transparent:focus{
@@ -74459,6 +74929,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .md\:focus\:border-cardBackgroundLight:focus{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .md\:focus\:border-fontTable:focus{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -74475,7 +74950,7 @@ main {
   }
 
   .md\:focus\:border-backgroundModal:focus{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:border-opacity-0{
@@ -81372,6 +81847,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .md\:placeholder-cardBackgroundLight::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-cardBackgroundLight:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-cardBackgroundLight::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .md\:placeholder-fontTable::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -81418,15 +81908,15 @@ main {
   }
 
   .md\:placeholder-backgroundModal::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:placeholder-backgroundModal:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:placeholder-backgroundModal::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -82728,6 +83218,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .md\:focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-cardBackgroundLight:focus::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .md\:focus\:placeholder-fontTable:focus::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -82774,15 +83279,15 @@ main {
   }
 
   .md\:focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:placeholder-backgroundModal:focus::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder{
@@ -86663,6 +87168,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .md\:ring-offset-cardBackgroundLight{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .md\:ring-offset-fontTable{
     --tw-ring-offset-color: #969cb3;
   }
@@ -86676,7 +87185,7 @@ main {
   }
 
   .md\:ring-offset-backgroundModal{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus-within\:ring-offset-transparent:focus-within{
@@ -87027,6 +87536,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .md\:focus-within\:ring-offset-cardBackgroundLight:focus-within{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .md\:focus-within\:ring-offset-fontTable:focus-within{
     --tw-ring-offset-color: #969cb3;
   }
@@ -87040,7 +87553,7 @@ main {
   }
 
   .md\:focus-within\:ring-offset-backgroundModal:focus-within{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:ring-offset-transparent:focus{
@@ -87391,6 +87904,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .md\:focus\:ring-offset-cardBackgroundLight:focus{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .md\:focus\:ring-offset-fontTable:focus{
     --tw-ring-offset-color: #969cb3;
   }
@@ -87404,7 +87921,7 @@ main {
   }
 
   .md\:focus\:ring-offset-backgroundModal:focus{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:ring-offset-0{
@@ -87900,6 +88417,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .md\:ring-cardBackgroundLight{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .md\:ring-fontTable{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -87916,7 +88438,7 @@ main {
   }
 
   .md\:ring-backgroundModal{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus-within\:ring-transparent:focus-within{
@@ -88352,6 +88874,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .md\:focus-within\:ring-cardBackgroundLight:focus-within{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .md\:focus-within\:ring-fontTable:focus-within{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -88368,7 +88895,7 @@ main {
   }
 
   .md\:focus-within\:ring-backgroundModal:focus-within{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:ring-transparent:focus{
@@ -88804,6 +89331,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .md\:focus\:ring-cardBackgroundLight:focus{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .md\:focus\:ring-fontTable:focus{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -88820,7 +89352,7 @@ main {
   }
 
   .md\:focus\:ring-backgroundModal:focus{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:ring-opacity-0{
@@ -89480,6 +90012,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .md\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .md\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -89496,7 +90033,7 @@ main {
   }
 
   .md\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .md\:group-hover\:text-transparent{
@@ -89932,6 +90469,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .group:hover .md\:group-hover\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .group:hover .md\:group-hover\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -89948,7 +90490,7 @@ main {
   }
 
   .group:hover .md\:group-hover\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus-within\:text-transparent:focus-within{
@@ -90384,6 +90926,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .md\:focus-within\:text-cardBackgroundLight:focus-within{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .md\:focus-within\:text-fontTable:focus-within{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -90400,7 +90947,7 @@ main {
   }
 
   .md\:focus-within\:text-backgroundModal:focus-within{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:hover\:text-transparent:hover{
@@ -90836,6 +91383,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .md\:hover\:text-cardBackgroundLight:hover{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .md\:hover\:text-fontTable:hover{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -90852,7 +91404,7 @@ main {
   }
 
   .md\:hover\:text-backgroundModal:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:focus\:text-transparent:focus{
@@ -91288,6 +91840,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .md\:focus\:text-cardBackgroundLight:focus{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .md\:focus\:text-fontTable:focus{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -91304,7 +91861,7 @@ main {
   }
 
   .md\:focus\:text-backgroundModal:focus{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .md\:text-opacity-0{
@@ -97553,6 +98110,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
   }
 
+  .lg\:divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+  }
+
   .lg\:divide-fontTable > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -97569,7 +98131,7 @@ main {
   }
 
   .lg\:divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -98189,6 +98751,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .lg\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .lg\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -98205,7 +98772,7 @@ main {
   }
 
   .lg\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .lg\:group-hover\:bg-transparent{
@@ -98641,6 +99208,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .group:hover .lg\:group-hover\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .group:hover .lg\:group-hover\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -98657,7 +99229,7 @@ main {
   }
 
   .group:hover .lg\:group-hover\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus-within\:bg-transparent:focus-within{
@@ -99093,6 +99665,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .lg\:focus-within\:bg-cardBackgroundLight:focus-within{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .lg\:focus-within\:bg-fontTable:focus-within{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -99109,7 +99686,7 @@ main {
   }
 
   .lg\:focus-within\:bg-backgroundModal:focus-within{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:hover\:bg-transparent:hover{
@@ -99545,6 +100122,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .lg\:hover\:bg-cardBackgroundLight:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .lg\:hover\:bg-fontTable:hover{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -99561,7 +100143,7 @@ main {
   }
 
   .lg\:hover\:bg-backgroundModal:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:bg-transparent:focus{
@@ -99997,6 +100579,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .lg\:focus\:bg-cardBackgroundLight:focus{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .lg\:focus\:bg-fontTable:focus{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -100013,7 +100600,7 @@ main {
   }
 
   .lg\:focus\:bg-backgroundModal:focus{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:bg-none{
@@ -100487,6 +101074,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:from-cardBackgroundLight{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:from-fontTable{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -100503,7 +101095,7 @@ main {
   }
 
   .lg\:from-backgroundModal{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -100855,6 +101447,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:via-cardBackgroundLight{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:via-fontTable{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -100868,7 +101464,7 @@ main {
   }
 
   .lg\:via-backgroundModal{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .lg\:to-transparent{
@@ -101219,6 +101815,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .lg\:to-cardBackgroundLight{
+    --tw-gradient-to: #3dd705;
+  }
+
   .lg\:to-fontTable{
     --tw-gradient-to: #969cb3;
   }
@@ -101232,7 +101832,7 @@ main {
   }
 
   .lg\:to-backgroundModal{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:hover\:from-transparent:hover{
@@ -101670,6 +102270,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:hover\:from-cardBackgroundLight:hover{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:hover\:from-fontTable:hover{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -101686,7 +102291,7 @@ main {
   }
 
   .lg\:hover\:from-backgroundModal:hover{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -102038,6 +102643,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:hover\:via-cardBackgroundLight:hover{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:hover\:via-fontTable:hover{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -102051,7 +102660,7 @@ main {
   }
 
   .lg\:hover\:via-backgroundModal:hover{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .lg\:hover\:to-transparent:hover{
@@ -102402,6 +103011,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .lg\:hover\:to-cardBackgroundLight:hover{
+    --tw-gradient-to: #3dd705;
+  }
+
   .lg\:hover\:to-fontTable:hover{
     --tw-gradient-to: #969cb3;
   }
@@ -102415,7 +103028,7 @@ main {
   }
 
   .lg\:hover\:to-backgroundModal:hover{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:from-transparent:focus{
@@ -102853,6 +103466,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:focus\:from-cardBackgroundLight:focus{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:focus\:from-fontTable:focus{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -102869,7 +103487,7 @@ main {
   }
 
   .lg\:focus\:from-backgroundModal:focus{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -103221,6 +103839,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .lg\:focus\:via-cardBackgroundLight:focus{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .lg\:focus\:via-fontTable:focus{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -103234,7 +103856,7 @@ main {
   }
 
   .lg\:focus\:via-backgroundModal:focus{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .lg\:focus\:to-transparent:focus{
@@ -103585,6 +104207,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .lg\:focus\:to-cardBackgroundLight:focus{
+    --tw-gradient-to: #3dd705;
+  }
+
   .lg\:focus\:to-fontTable:focus{
     --tw-gradient-to: #969cb3;
   }
@@ -103598,7 +104224,7 @@ main {
   }
 
   .lg\:focus\:to-backgroundModal:focus{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:bg-opacity-0{
@@ -104414,6 +105040,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .lg\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .lg\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -104430,7 +105061,7 @@ main {
   }
 
   .lg\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .lg\:group-hover\:border-transparent{
@@ -104866,6 +105497,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .group:hover .lg\:group-hover\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .group:hover .lg\:group-hover\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -104882,7 +105518,7 @@ main {
   }
 
   .group:hover .lg\:group-hover\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus-within\:border-transparent:focus-within{
@@ -105318,6 +105954,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .lg\:focus-within\:border-cardBackgroundLight:focus-within{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .lg\:focus-within\:border-fontTable:focus-within{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -105334,7 +105975,7 @@ main {
   }
 
   .lg\:focus-within\:border-backgroundModal:focus-within{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:hover\:border-transparent:hover{
@@ -105770,6 +106411,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .lg\:hover\:border-cardBackgroundLight:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .lg\:hover\:border-fontTable:hover{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -105786,7 +106432,7 @@ main {
   }
 
   .lg\:hover\:border-backgroundModal:hover{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:border-transparent:focus{
@@ -106222,6 +106868,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .lg\:focus\:border-cardBackgroundLight:focus{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .lg\:focus\:border-fontTable:focus{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -106238,7 +106889,7 @@ main {
   }
 
   .lg\:focus\:border-backgroundModal:focus{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:border-opacity-0{
@@ -113135,6 +113786,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .lg\:placeholder-cardBackgroundLight::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-cardBackgroundLight:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-cardBackgroundLight::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .lg\:placeholder-fontTable::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -113181,15 +113847,15 @@ main {
   }
 
   .lg\:placeholder-backgroundModal::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:placeholder-backgroundModal:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:placeholder-backgroundModal::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -114491,6 +115157,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .lg\:focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-cardBackgroundLight:focus::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .lg\:focus\:placeholder-fontTable:focus::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -114537,15 +115218,15 @@ main {
   }
 
   .lg\:focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:placeholder-backgroundModal:focus::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder{
@@ -118426,6 +119107,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .lg\:ring-offset-cardBackgroundLight{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .lg\:ring-offset-fontTable{
     --tw-ring-offset-color: #969cb3;
   }
@@ -118439,7 +119124,7 @@ main {
   }
 
   .lg\:ring-offset-backgroundModal{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus-within\:ring-offset-transparent:focus-within{
@@ -118790,6 +119475,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .lg\:focus-within\:ring-offset-cardBackgroundLight:focus-within{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .lg\:focus-within\:ring-offset-fontTable:focus-within{
     --tw-ring-offset-color: #969cb3;
   }
@@ -118803,7 +119492,7 @@ main {
   }
 
   .lg\:focus-within\:ring-offset-backgroundModal:focus-within{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:ring-offset-transparent:focus{
@@ -119154,6 +119843,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .lg\:focus\:ring-offset-cardBackgroundLight:focus{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .lg\:focus\:ring-offset-fontTable:focus{
     --tw-ring-offset-color: #969cb3;
   }
@@ -119167,7 +119860,7 @@ main {
   }
 
   .lg\:focus\:ring-offset-backgroundModal:focus{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:ring-offset-0{
@@ -119663,6 +120356,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .lg\:ring-cardBackgroundLight{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .lg\:ring-fontTable{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -119679,7 +120377,7 @@ main {
   }
 
   .lg\:ring-backgroundModal{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus-within\:ring-transparent:focus-within{
@@ -120115,6 +120813,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .lg\:focus-within\:ring-cardBackgroundLight:focus-within{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .lg\:focus-within\:ring-fontTable:focus-within{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -120131,7 +120834,7 @@ main {
   }
 
   .lg\:focus-within\:ring-backgroundModal:focus-within{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:ring-transparent:focus{
@@ -120567,6 +121270,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .lg\:focus\:ring-cardBackgroundLight:focus{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .lg\:focus\:ring-fontTable:focus{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -120583,7 +121291,7 @@ main {
   }
 
   .lg\:focus\:ring-backgroundModal:focus{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:ring-opacity-0{
@@ -121243,6 +121951,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .lg\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .lg\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -121259,7 +121972,7 @@ main {
   }
 
   .lg\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .lg\:group-hover\:text-transparent{
@@ -121695,6 +122408,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .group:hover .lg\:group-hover\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .group:hover .lg\:group-hover\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -121711,7 +122429,7 @@ main {
   }
 
   .group:hover .lg\:group-hover\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus-within\:text-transparent:focus-within{
@@ -122147,6 +122865,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .lg\:focus-within\:text-cardBackgroundLight:focus-within{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .lg\:focus-within\:text-fontTable:focus-within{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -122163,7 +122886,7 @@ main {
   }
 
   .lg\:focus-within\:text-backgroundModal:focus-within{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:hover\:text-transparent:hover{
@@ -122599,6 +123322,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .lg\:hover\:text-cardBackgroundLight:hover{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .lg\:hover\:text-fontTable:hover{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -122615,7 +123343,7 @@ main {
   }
 
   .lg\:hover\:text-backgroundModal:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:focus\:text-transparent:focus{
@@ -123051,6 +123779,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .lg\:focus\:text-cardBackgroundLight:focus{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .lg\:focus\:text-fontTable:focus{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -123067,7 +123800,7 @@ main {
   }
 
   .lg\:focus\:text-backgroundModal:focus{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .lg\:text-opacity-0{
@@ -129316,6 +130049,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
   }
 
+  .xl\:divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+  }
+
   .xl\:divide-fontTable > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -129332,7 +130070,7 @@ main {
   }
 
   .xl\:divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -129952,6 +130690,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .xl\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .xl\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -129968,7 +130711,7 @@ main {
   }
 
   .xl\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .xl\:group-hover\:bg-transparent{
@@ -130404,6 +131147,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .group:hover .xl\:group-hover\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .group:hover .xl\:group-hover\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -130420,7 +131168,7 @@ main {
   }
 
   .group:hover .xl\:group-hover\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus-within\:bg-transparent:focus-within{
@@ -130856,6 +131604,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .xl\:focus-within\:bg-cardBackgroundLight:focus-within{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .xl\:focus-within\:bg-fontTable:focus-within{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -130872,7 +131625,7 @@ main {
   }
 
   .xl\:focus-within\:bg-backgroundModal:focus-within{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:hover\:bg-transparent:hover{
@@ -131308,6 +132061,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .xl\:hover\:bg-cardBackgroundLight:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .xl\:hover\:bg-fontTable:hover{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -131324,7 +132082,7 @@ main {
   }
 
   .xl\:hover\:bg-backgroundModal:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:bg-transparent:focus{
@@ -131760,6 +132518,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .xl\:focus\:bg-cardBackgroundLight:focus{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .xl\:focus\:bg-fontTable:focus{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -131776,7 +132539,7 @@ main {
   }
 
   .xl\:focus\:bg-backgroundModal:focus{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:bg-none{
@@ -132250,6 +133013,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:from-cardBackgroundLight{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:from-fontTable{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -132266,7 +133034,7 @@ main {
   }
 
   .xl\:from-backgroundModal{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -132618,6 +133386,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:via-cardBackgroundLight{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:via-fontTable{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -132631,7 +133403,7 @@ main {
   }
 
   .xl\:via-backgroundModal{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .xl\:to-transparent{
@@ -132982,6 +133754,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .xl\:to-cardBackgroundLight{
+    --tw-gradient-to: #3dd705;
+  }
+
   .xl\:to-fontTable{
     --tw-gradient-to: #969cb3;
   }
@@ -132995,7 +133771,7 @@ main {
   }
 
   .xl\:to-backgroundModal{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:hover\:from-transparent:hover{
@@ -133433,6 +134209,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:hover\:from-cardBackgroundLight:hover{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:hover\:from-fontTable:hover{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -133449,7 +134230,7 @@ main {
   }
 
   .xl\:hover\:from-backgroundModal:hover{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -133801,6 +134582,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:hover\:via-cardBackgroundLight:hover{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:hover\:via-fontTable:hover{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -133814,7 +134599,7 @@ main {
   }
 
   .xl\:hover\:via-backgroundModal:hover{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .xl\:hover\:to-transparent:hover{
@@ -134165,6 +134950,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .xl\:hover\:to-cardBackgroundLight:hover{
+    --tw-gradient-to: #3dd705;
+  }
+
   .xl\:hover\:to-fontTable:hover{
     --tw-gradient-to: #969cb3;
   }
@@ -134178,7 +134967,7 @@ main {
   }
 
   .xl\:hover\:to-backgroundModal:hover{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:from-transparent:focus{
@@ -134616,6 +135405,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:focus\:from-cardBackgroundLight:focus{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:focus\:from-fontTable:focus{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -134632,7 +135426,7 @@ main {
   }
 
   .xl\:focus\:from-backgroundModal:focus{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -134984,6 +135778,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .xl\:focus\:via-cardBackgroundLight:focus{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .xl\:focus\:via-fontTable:focus{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -134997,7 +135795,7 @@ main {
   }
 
   .xl\:focus\:via-backgroundModal:focus{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .xl\:focus\:to-transparent:focus{
@@ -135348,6 +136146,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .xl\:focus\:to-cardBackgroundLight:focus{
+    --tw-gradient-to: #3dd705;
+  }
+
   .xl\:focus\:to-fontTable:focus{
     --tw-gradient-to: #969cb3;
   }
@@ -135361,7 +136163,7 @@ main {
   }
 
   .xl\:focus\:to-backgroundModal:focus{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:bg-opacity-0{
@@ -136177,6 +136979,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .xl\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .xl\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -136193,7 +137000,7 @@ main {
   }
 
   .xl\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .xl\:group-hover\:border-transparent{
@@ -136629,6 +137436,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .group:hover .xl\:group-hover\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .group:hover .xl\:group-hover\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -136645,7 +137457,7 @@ main {
   }
 
   .group:hover .xl\:group-hover\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus-within\:border-transparent:focus-within{
@@ -137081,6 +137893,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .xl\:focus-within\:border-cardBackgroundLight:focus-within{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .xl\:focus-within\:border-fontTable:focus-within{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -137097,7 +137914,7 @@ main {
   }
 
   .xl\:focus-within\:border-backgroundModal:focus-within{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:hover\:border-transparent:hover{
@@ -137533,6 +138350,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .xl\:hover\:border-cardBackgroundLight:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .xl\:hover\:border-fontTable:hover{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -137549,7 +138371,7 @@ main {
   }
 
   .xl\:hover\:border-backgroundModal:hover{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:border-transparent:focus{
@@ -137985,6 +138807,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .xl\:focus\:border-cardBackgroundLight:focus{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .xl\:focus\:border-fontTable:focus{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -138001,7 +138828,7 @@ main {
   }
 
   .xl\:focus\:border-backgroundModal:focus{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:border-opacity-0{
@@ -144898,6 +145725,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .xl\:placeholder-cardBackgroundLight::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-cardBackgroundLight:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-cardBackgroundLight::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .xl\:placeholder-fontTable::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -144944,15 +145786,15 @@ main {
   }
 
   .xl\:placeholder-backgroundModal::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:placeholder-backgroundModal:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:placeholder-backgroundModal::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -146254,6 +147096,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .xl\:focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-cardBackgroundLight:focus::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .xl\:focus\:placeholder-fontTable:focus::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -146300,15 +147157,15 @@ main {
   }
 
   .xl\:focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:placeholder-backgroundModal:focus::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder{
@@ -150189,6 +151046,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .xl\:ring-offset-cardBackgroundLight{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .xl\:ring-offset-fontTable{
     --tw-ring-offset-color: #969cb3;
   }
@@ -150202,7 +151063,7 @@ main {
   }
 
   .xl\:ring-offset-backgroundModal{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus-within\:ring-offset-transparent:focus-within{
@@ -150553,6 +151414,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .xl\:focus-within\:ring-offset-cardBackgroundLight:focus-within{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .xl\:focus-within\:ring-offset-fontTable:focus-within{
     --tw-ring-offset-color: #969cb3;
   }
@@ -150566,7 +151431,7 @@ main {
   }
 
   .xl\:focus-within\:ring-offset-backgroundModal:focus-within{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:ring-offset-transparent:focus{
@@ -150917,6 +151782,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .xl\:focus\:ring-offset-cardBackgroundLight:focus{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .xl\:focus\:ring-offset-fontTable:focus{
     --tw-ring-offset-color: #969cb3;
   }
@@ -150930,7 +151799,7 @@ main {
   }
 
   .xl\:focus\:ring-offset-backgroundModal:focus{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:ring-offset-0{
@@ -151426,6 +152295,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .xl\:ring-cardBackgroundLight{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .xl\:ring-fontTable{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -151442,7 +152316,7 @@ main {
   }
 
   .xl\:ring-backgroundModal{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus-within\:ring-transparent:focus-within{
@@ -151878,6 +152752,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .xl\:focus-within\:ring-cardBackgroundLight:focus-within{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .xl\:focus-within\:ring-fontTable:focus-within{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -151894,7 +152773,7 @@ main {
   }
 
   .xl\:focus-within\:ring-backgroundModal:focus-within{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:ring-transparent:focus{
@@ -152330,6 +153209,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .xl\:focus\:ring-cardBackgroundLight:focus{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .xl\:focus\:ring-fontTable:focus{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -152346,7 +153230,7 @@ main {
   }
 
   .xl\:focus\:ring-backgroundModal:focus{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:ring-opacity-0{
@@ -153006,6 +153890,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .xl\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .xl\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -153022,7 +153911,7 @@ main {
   }
 
   .xl\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .xl\:group-hover\:text-transparent{
@@ -153458,6 +154347,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .group:hover .xl\:group-hover\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .group:hover .xl\:group-hover\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -153474,7 +154368,7 @@ main {
   }
 
   .group:hover .xl\:group-hover\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus-within\:text-transparent:focus-within{
@@ -153910,6 +154804,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .xl\:focus-within\:text-cardBackgroundLight:focus-within{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .xl\:focus-within\:text-fontTable:focus-within{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -153926,7 +154825,7 @@ main {
   }
 
   .xl\:focus-within\:text-backgroundModal:focus-within{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:hover\:text-transparent:hover{
@@ -154362,6 +155261,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .xl\:hover\:text-cardBackgroundLight:hover{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .xl\:hover\:text-fontTable:hover{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -154378,7 +155282,7 @@ main {
   }
 
   .xl\:hover\:text-backgroundModal:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:focus\:text-transparent:focus{
@@ -154814,6 +155718,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .xl\:focus\:text-cardBackgroundLight:focus{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .xl\:focus\:text-fontTable:focus{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -154830,7 +155739,7 @@ main {
   }
 
   .xl\:focus\:text-backgroundModal:focus{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .xl\:text-opacity-0{
@@ -161079,6 +161988,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-divide-opacity));
   }
 
+  .\32xl\:divide-cardBackgroundLight > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-divide-opacity));
+  }
+
   .\32xl\:divide-fontTable > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-divide-opacity));
@@ -161095,7 +162009,7 @@ main {
   }
 
   .\32xl\:divide-backgroundModal > :not([hidden]) ~ :not([hidden]){
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:divide-solid > :not([hidden]) ~ :not([hidden]){
@@ -161715,6 +162629,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .\32xl\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .\32xl\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -161731,7 +162650,7 @@ main {
   }
 
   .\32xl\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .\32xl\:group-hover\:bg-transparent{
@@ -162167,6 +163086,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .group:hover .\32xl\:group-hover\:bg-cardBackgroundLight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:bg-fontTable{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -162183,7 +163107,7 @@ main {
   }
 
   .group:hover .\32xl\:group-hover\:bg-backgroundModal{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus-within\:bg-transparent:focus-within{
@@ -162619,6 +163543,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .\32xl\:focus-within\:bg-cardBackgroundLight:focus-within{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .\32xl\:focus-within\:bg-fontTable:focus-within{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -162635,7 +163564,7 @@ main {
   }
 
   .\32xl\:focus-within\:bg-backgroundModal:focus-within{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:hover\:bg-transparent:hover{
@@ -163071,6 +164000,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .\32xl\:hover\:bg-cardBackgroundLight:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .\32xl\:hover\:bg-fontTable:hover{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -163087,7 +164021,7 @@ main {
   }
 
   .\32xl\:hover\:bg-backgroundModal:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:bg-transparent:focus{
@@ -163523,6 +164457,11 @@ main {
     background-color: rgba(73, 170, 38, var(--tw-bg-opacity));
   }
 
+  .\32xl\:focus\:bg-cardBackgroundLight:focus{
+    --tw-bg-opacity: 1;
+    background-color: rgba(61, 215, 5, var(--tw-bg-opacity));
+  }
+
   .\32xl\:focus\:bg-fontTable:focus{
     --tw-bg-opacity: 1;
     background-color: rgba(150, 156, 179, var(--tw-bg-opacity));
@@ -163539,7 +164478,7 @@ main {
   }
 
   .\32xl\:focus\:bg-backgroundModal:focus{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:bg-none{
@@ -164013,6 +164952,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:from-cardBackgroundLight{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:from-fontTable{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -164029,7 +164973,7 @@ main {
   }
 
   .\32xl\:from-backgroundModal{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -164381,6 +165325,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:via-cardBackgroundLight{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:via-fontTable{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -164394,7 +165342,7 @@ main {
   }
 
   .\32xl\:via-backgroundModal{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .\32xl\:to-transparent{
@@ -164745,6 +165693,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .\32xl\:to-cardBackgroundLight{
+    --tw-gradient-to: #3dd705;
+  }
+
   .\32xl\:to-fontTable{
     --tw-gradient-to: #969cb3;
   }
@@ -164758,7 +165710,7 @@ main {
   }
 
   .\32xl\:to-backgroundModal{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:hover\:from-transparent:hover{
@@ -165196,6 +166148,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:hover\:from-cardBackgroundLight:hover{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:hover\:from-fontTable:hover{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -165212,7 +166169,7 @@ main {
   }
 
   .\32xl\:hover\:from-backgroundModal:hover{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -165564,6 +166521,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:hover\:via-cardBackgroundLight:hover{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:hover\:via-fontTable:hover{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -165577,7 +166538,7 @@ main {
   }
 
   .\32xl\:hover\:via-backgroundModal:hover{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .\32xl\:hover\:to-transparent:hover{
@@ -165928,6 +166889,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .\32xl\:hover\:to-cardBackgroundLight:hover{
+    --tw-gradient-to: #3dd705;
+  }
+
   .\32xl\:hover\:to-fontTable:hover{
     --tw-gradient-to: #969cb3;
   }
@@ -165941,7 +166906,7 @@ main {
   }
 
   .\32xl\:hover\:to-backgroundModal:hover{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:from-transparent:focus{
@@ -166379,6 +167344,11 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:focus\:from-cardBackgroundLight:focus{
+    --tw-gradient-from: #3dd705;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:focus\:from-fontTable:focus{
     --tw-gradient-from: #969cb3;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(150, 156, 179, 0));
@@ -166395,7 +167365,7 @@ main {
   }
 
   .\32xl\:focus\:from-backgroundModal:focus{
-    --tw-gradient-from: rgba(0, 0, 0, 0.8);
+    --tw-gradient-from: rgba(0, 0, 0, 0.7);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
@@ -166747,6 +167717,10 @@ main {
     --tw-gradient-stops: var(--tw-gradient-from), #49AA26, var(--tw-gradient-to, rgba(73, 170, 38, 0));
   }
 
+  .\32xl\:focus\:via-cardBackgroundLight:focus{
+    --tw-gradient-stops: var(--tw-gradient-from), #3dd705, var(--tw-gradient-to, rgba(61, 215, 5, 0));
+  }
+
   .\32xl\:focus\:via-fontTable:focus{
     --tw-gradient-stops: var(--tw-gradient-from), #969cb3, var(--tw-gradient-to, rgba(150, 156, 179, 0));
   }
@@ -166760,7 +167734,7 @@ main {
   }
 
   .\32xl\:focus\:via-backgroundModal:focus{
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.8), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(0, 0, 0, 0.7), var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
 
   .\32xl\:focus\:to-transparent:focus{
@@ -167111,6 +168085,10 @@ main {
     --tw-gradient-to: #49AA26;
   }
 
+  .\32xl\:focus\:to-cardBackgroundLight:focus{
+    --tw-gradient-to: #3dd705;
+  }
+
   .\32xl\:focus\:to-fontTable:focus{
     --tw-gradient-to: #969cb3;
   }
@@ -167124,7 +168102,7 @@ main {
   }
 
   .\32xl\:focus\:to-backgroundModal:focus{
-    --tw-gradient-to: rgba(0, 0, 0, 0.8);
+    --tw-gradient-to: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:bg-opacity-0{
@@ -167940,6 +168918,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .\32xl\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .\32xl\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -167956,7 +168939,7 @@ main {
   }
 
   .\32xl\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .\32xl\:group-hover\:border-transparent{
@@ -168392,6 +169375,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .group:hover .\32xl\:group-hover\:border-cardBackgroundLight{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:border-fontTable{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -168408,7 +169396,7 @@ main {
   }
 
   .group:hover .\32xl\:group-hover\:border-backgroundModal{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus-within\:border-transparent:focus-within{
@@ -168844,6 +169832,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .\32xl\:focus-within\:border-cardBackgroundLight:focus-within{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .\32xl\:focus-within\:border-fontTable:focus-within{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -168860,7 +169853,7 @@ main {
   }
 
   .\32xl\:focus-within\:border-backgroundModal:focus-within{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:hover\:border-transparent:hover{
@@ -169296,6 +170289,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .\32xl\:hover\:border-cardBackgroundLight:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .\32xl\:hover\:border-fontTable:hover{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -169312,7 +170310,7 @@ main {
   }
 
   .\32xl\:hover\:border-backgroundModal:hover{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:border-transparent:focus{
@@ -169748,6 +170746,11 @@ main {
     border-color: rgba(73, 170, 38, var(--tw-border-opacity));
   }
 
+  .\32xl\:focus\:border-cardBackgroundLight:focus{
+    --tw-border-opacity: 1;
+    border-color: rgba(61, 215, 5, var(--tw-border-opacity));
+  }
+
   .\32xl\:focus\:border-fontTable:focus{
     --tw-border-opacity: 1;
     border-color: rgba(150, 156, 179, var(--tw-border-opacity));
@@ -169764,7 +170767,7 @@ main {
   }
 
   .\32xl\:focus\:border-backgroundModal:focus{
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:border-opacity-0{
@@ -176661,6 +177664,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .\32xl\:placeholder-cardBackgroundLight::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-cardBackgroundLight:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-cardBackgroundLight::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .\32xl\:placeholder-fontTable::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -176707,15 +177725,15 @@ main {
   }
 
   .\32xl\:placeholder-backgroundModal::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:placeholder-backgroundModal:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:placeholder-backgroundModal::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:placeholder-transparent:focus::-moz-placeholder{
@@ -178017,6 +179035,21 @@ main {
     color: rgba(73, 170, 38, var(--tw-placeholder-opacity));
   }
 
+  .\32xl\:focus\:placeholder-cardBackgroundLight:focus::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-cardBackgroundLight:focus:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-cardBackgroundLight:focus::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-placeholder-opacity));
+  }
+
   .\32xl\:focus\:placeholder-fontTable:focus::-moz-placeholder{
     --tw-placeholder-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-placeholder-opacity));
@@ -178063,15 +179096,15 @@ main {
   }
 
   .\32xl\:focus\:placeholder-backgroundModal:focus::-moz-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:placeholder-backgroundModal:focus:-ms-input-placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:placeholder-backgroundModal:focus::placeholder{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder{
@@ -181952,6 +182985,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .\32xl\:ring-offset-cardBackgroundLight{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .\32xl\:ring-offset-fontTable{
     --tw-ring-offset-color: #969cb3;
   }
@@ -181965,7 +183002,7 @@ main {
   }
 
   .\32xl\:ring-offset-backgroundModal{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus-within\:ring-offset-transparent:focus-within{
@@ -182316,6 +183353,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .\32xl\:focus-within\:ring-offset-cardBackgroundLight:focus-within{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .\32xl\:focus-within\:ring-offset-fontTable:focus-within{
     --tw-ring-offset-color: #969cb3;
   }
@@ -182329,7 +183370,7 @@ main {
   }
 
   .\32xl\:focus-within\:ring-offset-backgroundModal:focus-within{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:ring-offset-transparent:focus{
@@ -182680,6 +183721,10 @@ main {
     --tw-ring-offset-color: #49AA26;
   }
 
+  .\32xl\:focus\:ring-offset-cardBackgroundLight:focus{
+    --tw-ring-offset-color: #3dd705;
+  }
+
   .\32xl\:focus\:ring-offset-fontTable:focus{
     --tw-ring-offset-color: #969cb3;
   }
@@ -182693,7 +183738,7 @@ main {
   }
 
   .\32xl\:focus\:ring-offset-backgroundModal:focus{
-    --tw-ring-offset-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-offset-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:ring-offset-0{
@@ -183189,6 +184234,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .\32xl\:ring-cardBackgroundLight{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .\32xl\:ring-fontTable{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -183205,7 +184255,7 @@ main {
   }
 
   .\32xl\:ring-backgroundModal{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus-within\:ring-transparent:focus-within{
@@ -183641,6 +184691,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .\32xl\:focus-within\:ring-cardBackgroundLight:focus-within{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .\32xl\:focus-within\:ring-fontTable:focus-within{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -183657,7 +184712,7 @@ main {
   }
 
   .\32xl\:focus-within\:ring-backgroundModal:focus-within{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:ring-transparent:focus{
@@ -184093,6 +185148,11 @@ main {
     --tw-ring-color: rgba(73, 170, 38, var(--tw-ring-opacity));
   }
 
+  .\32xl\:focus\:ring-cardBackgroundLight:focus{
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(61, 215, 5, var(--tw-ring-opacity));
+  }
+
   .\32xl\:focus\:ring-fontTable:focus{
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(150, 156, 179, var(--tw-ring-opacity));
@@ -184109,7 +185169,7 @@ main {
   }
 
   .\32xl\:focus\:ring-backgroundModal:focus{
-    --tw-ring-color: rgba(0, 0, 0, 0.8);
+    --tw-ring-color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:ring-opacity-0{
@@ -184769,6 +185829,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .\32xl\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .\32xl\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -184785,7 +185850,7 @@ main {
   }
 
   .\32xl\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .group:hover .\32xl\:group-hover\:text-transparent{
@@ -185221,6 +186286,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .group:hover .\32xl\:group-hover\:text-cardBackgroundLight{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:text-fontTable{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -185237,7 +186307,7 @@ main {
   }
 
   .group:hover .\32xl\:group-hover\:text-backgroundModal{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus-within\:text-transparent:focus-within{
@@ -185673,6 +186743,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus-within\:text-cardBackgroundLight:focus-within{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .\32xl\:focus-within\:text-fontTable:focus-within{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -185689,7 +186764,7 @@ main {
   }
 
   .\32xl\:focus-within\:text-backgroundModal:focus-within{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:hover\:text-transparent:hover{
@@ -186125,6 +187200,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .\32xl\:hover\:text-cardBackgroundLight:hover{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .\32xl\:hover\:text-fontTable:hover{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -186141,7 +187221,7 @@ main {
   }
 
   .\32xl\:hover\:text-backgroundModal:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:focus\:text-transparent:focus{
@@ -186577,6 +187657,11 @@ main {
     color: rgba(73, 170, 38, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus\:text-cardBackgroundLight:focus{
+    --tw-text-opacity: 1;
+    color: rgba(61, 215, 5, var(--tw-text-opacity));
+  }
+
   .\32xl\:focus\:text-fontTable:focus{
     --tw-text-opacity: 1;
     color: rgba(150, 156, 179, var(--tw-text-opacity));
@@ -186593,7 +187678,7 @@ main {
   }
 
   .\32xl\:focus\:text-backgroundModal:focus{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .\32xl\:text-opacity-0{

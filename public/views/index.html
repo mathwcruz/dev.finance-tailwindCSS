@@ -68,7 +68,7 @@
       </section>
 
       <section class="block w-full overflow-x-auto">
-        <a class="btn-new-transaction" href="#">+ Nova transação</a>
+        <a data-new-transaction-button class="btn-new-transaction" href="#">+ Nova transação</a>
         <table class="w-full border-none text-fontTable">
           <thead>
             <tr>
@@ -108,10 +108,41 @@
       </section>
     </main>
 
+    <div data-modaloverlay class="fixed top-0 flex items-center justify-center w-full h-full transition duration-300 ease-in bg-backgroundModal modal-inactive">
+      <div class="relative w-11/12 max-w-lg p-10 bg-gray-200 rounded-md">
+        <div class="max-w-lg">
+          <h2 class="mt-0 font-semibold">Nova Transação</h2>
+          <form>
+            <div class="input-group-modal">
+              <label class="sr-only" for="description">Descrição</label>
+              <input name="description" placeholder="Descrição da transação" id="description" class="input-modal" type="text">
+            </div>
+
+            <div class="input-group-modal">
+              <label class="sr-only" for="amount">Valor</label>
+              <input name="amount" placeholder="0,00" id="amount" class="input-modal" step="0.01" type="number">
+              <small class="opacity-40">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+            </div>
+
+            <div class="input-group-modal">
+              <label class="sr-only" for="date">Data</label>
+              <input name="date" id="date" class="input-modal" type="date">
+            </div>
+
+            <div class="flex items-center justify-between input-group-modal">
+              <a data-button-cancel class="flex items-center justify-center w-2/5 h-12 border-2 rounded cursor-pointer text-expanse border-expanse opacity-60 hover:opacity-100">Cancelar</a>
+              <button class="w-full h-12 ml-5 text-white rounded cursor-pointer bg-cardBackground hover:bg-cardBackgroundLight" type="submit">Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer class="px-0 pt-16 pb-8 text-center opacity-60 text-fontDefault">
       <p>dev.finance$</p>
     </footer>
 
     <script src="../../src/loading.js"></script>
+    <script src="../js/modalNewCost.js"></script>
   </body>
 </html>

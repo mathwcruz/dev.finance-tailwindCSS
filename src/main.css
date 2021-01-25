@@ -19,7 +19,7 @@
 }
 
 .table-thead-th {
-  @apply px-8 py-4 text-xl font-normal text-center bg-white;
+  @apply px-8 py-4 text-xl font-semibold text-center bg-white;
 }
 
 .table-tbody-tr {
@@ -39,7 +39,7 @@
 }
 
 .input-mark {
-  @apply w-56 px-4 py-2 text-lg text-black placeholder-opacity-50 border-2 border-black rounded-lg outline-none sm:w-80 bg-none focus:border-cardBackground focus:text-fontDefault;
+  @apply w-56 px-4 py-2 text-lg text-black placeholder-opacity-50 border-2 border-black rounded-lg outline-none sm:w-80 bg-none focus:border-background focus:text-fontDefault;
 }
 
 .terms-a {
@@ -64,6 +64,28 @@ main {
 
 .btn {
   @apply px-3 py-1 mt-4 text-lg font-semibold text-black transition duration-500 ease-in-out bg-gray-200 border border-solid rounded-lg shadow-xl outline-none md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl border-background hover:bg-background hover:text-white hover:border-white;
+}
+
+.input-group-modal {
+  @apply mt-3;
+}
+
+.input-modal {
+  @apply w-full p-3 rounded focus:border-background;
+}
+
+/* CSS PURO */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 @tailwind components;
