@@ -548,6 +548,8 @@ video {
   height: auto;
 }
 
+/* Classes CSS com estilizaçãoes de classes Tailwind*/
+
 .card {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -567,7 +569,6 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 400;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -641,12 +642,6 @@ video {
   padding: 0.75rem;
 }
 
-.input-mark {
-  background-image: none;
-  --tw-border-opacity: 1;
-  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
-}
-
 .input-mark:focus{
   --tw-border-opacity: 1;
   border-color: rgba(45, 74, 34, var(--tw-border-opacity));
@@ -654,9 +649,9 @@ video {
 
 .input-mark{
   border-radius: 0.5rem;
-  border-width: 2px;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  border-width: 1px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
   padding-top: 0.5rem;
@@ -680,20 +675,19 @@ video {
 .input-mark{
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
-}
-
-.input-mark:focus{
-  --tw-text-opacity: 1;
-  color: rgba(54, 63, 95, var(--tw-text-opacity));
-}
-
-.input-mark{
   width: 14rem;
 }
 
 @media (min-width: 640px){
   .input-mark{
     width: 20rem;
+  }
+}
+
+@media (min-width: 768px){
+  .input-mark{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -712,65 +706,44 @@ video {
   }
 }
 
-main {
-  z-index: 10;
-}
-
-.modal-inactive {
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.active {
-  z-index: 100;
-  opacity: 1;
-  visibility: visible;
-}
-
 .btn {
-  --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-}
-
-.btn:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(45, 74, 34, var(--tw-bg-opacity));
 }
 
-.btn{
-  --tw-border-opacity: 1;
-  border-color: rgba(45, 74, 34, var(--tw-border-opacity));
-}
-
 .btn:hover{
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
 
 .btn{
   border-radius: 0.5rem;
-  border-style: solid;
-  border-width: 1px;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin-top: 1rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn:hover{
+  --tw-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn{
   --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .btn:hover{
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(45, 74, 34, var(--tw-text-opacity));
 }
 
 .btn{
@@ -814,11 +787,25 @@ main {
 
 .input-modal{
   border-radius: 0.25rem;
+  border-width: 1px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   padding: 0.75rem;
   width: 100%;
 }
 
+@media (min-width: 640px){
+  .input-modal{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 /* CSS PURO */
+
+main {
+  z-index: 10;
+}
 
 .sr-only {
   position: absolute;
@@ -830,6 +817,18 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.modal-inactive {
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
 }
 
 .container{

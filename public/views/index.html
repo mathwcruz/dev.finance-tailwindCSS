@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="box-border w-screen h-screen bg-gray-200 font-poppins">
+  <body class="box-border w-full h-full bg-gray-200 font-poppins">
     <header
       class="grid w-full grid-rows-2 px-0 pt-8 pb-40 text-center bg-background"
     >
@@ -25,7 +25,7 @@
       />
       <a
         href="../views/login.html"
-        class="self-center row-start-2 px-1 py-2 mt-6 text-lg font-bold transition duration-300 ease-in-out bg-white rounded-lg cursor-pointer w-44 sm:text-xl sm:w-60 hover:bg-background hover:text-white text-background justify-self-center"
+        class="self-center row-start-2 px-1 py-2 mt-6 text-lg font-bold text-white transition duration-300 ease-in-out rounded-lg cursor-pointer w-44 sm:text-xl sm:w-60 hover:text-gray-100 justify-self-center"
       >
         Sair da sessão
       </a>
@@ -121,7 +121,7 @@
             <div class="input-group-modal">
               <label class="sr-only" for="amount">Valor</label>
               <input name="amount" placeholder="0,00" id="amount" class="input-modal" step="0.01" type="number">
-              <small class="opacity-40">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+              <small class="text-xs opacity-40 sm:text-sm">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
             </div>
 
             <div class="input-group-modal">

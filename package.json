@@ -4,13 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/main.css -o public/assets/styles.css"
+    "build-css": "tailwindcss build src/main.css -o public/assets/styles.css",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "Matheus_Cruz",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
   "dependencies": {
     "autoprefixer": "^10.2.1",
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "4.2.3",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^4.3.8",
+    "init": "0.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

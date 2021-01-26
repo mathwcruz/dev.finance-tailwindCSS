@@ -2,12 +2,14 @@
 
 @tailwind base;
 
+/* Classes CSS com estilizaçãoes de classes Tailwind*/
+
 .card {
   @apply px-8 py-6 mb-8 bg-white rounded-md shadow-sm text-fontDefault ;
 }
 
 .card-h3 {
-  @apply flex items-center justify-between text-xl font-normal font-semibold;
+  @apply flex items-center justify-between text-xl font-semibold;
 }
 
 .card-p {
@@ -39,15 +41,41 @@
 }
 
 .input-mark {
-  @apply w-56 px-4 py-2 text-lg text-black placeholder-opacity-50 border-2 border-black rounded-lg outline-none sm:w-80 bg-none focus:border-background focus:text-fontDefault;
+  @apply w-56 px-4 py-2 text-base text-black placeholder-opacity-50 border rounded-lg outline-none md:text-lg sm:w-80 focus:border-background;
 }
 
 .terms-a {
   @apply text-base font-semibold text-blue-600 sm:text-lg;
 }
 
+.btn {
+  @apply px-4 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out rounded-lg shadow-xl outline-none bg-background md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl hover:bg-gray-300 hover:text-background hover:shadow-none;
+}
+
+.input-group-modal {
+  @apply mt-3;
+}
+
+.input-modal {
+  @apply w-full p-3 text-xs border rounded sm:text-sm focus:border-background;
+}
+
+/* CSS PURO */
+
 main {
   z-index: 10;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .modal-inactive {
@@ -60,32 +88,6 @@ main {
   z-index: 100;
   opacity: 1;
   visibility: visible;
-}
-
-.btn {
-  @apply px-3 py-1 mt-4 text-lg font-semibold text-black transition duration-500 ease-in-out bg-gray-200 border border-solid rounded-lg shadow-xl outline-none md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl border-background hover:bg-background hover:text-white hover:border-white;
-}
-
-.input-group-modal {
-  @apply mt-3;
-}
-
-.input-modal {
-  @apply w-full p-3 rounded focus:border-background;
-}
-
-/* CSS PURO */
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 @tailwind components;
