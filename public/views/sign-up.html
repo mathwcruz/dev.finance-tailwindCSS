@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dev.finance$ - Sign in</title>
-    <!-- FAZER UMA PÁGINA DE CADASTRO DE CONTA -->
+    <title>dev.finance$ - Sign up</title>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
@@ -13,8 +12,19 @@
     <link rel="stylesheet" href="../../src/loading.css" />
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
-  <body class="bg-gray-300 text-fontDefault font-poppins">
-    <main class="w-screen h-screen lg:grid lg:grid-cols-customGrid">
+  <body
+    class="box-border w-full h-full bg-gray-300 text-fontDefault font-poppins"
+  >
+    <main class="w-full lg:grid lg:grid-cols-customGrid2">
+      <div
+        class="hidden lg:visible lg:items-center lg:justify-center lg:shadow-xl lg:flex lg:bg-background"
+      >
+        <img
+          class="lg:w-11/12 lg:mx-4"
+          src="../images/banner-sign-up.svg"
+          alt="Controle financeiro"
+        />
+      </div>
       <div
         class="flex items-center justify-center w-screen h-screen text-base lg:w-full lg:h-full"
       >
@@ -32,7 +42,7 @@
                 <h3
                   class="row-start-1 p-0 m-0 text-lg font-semibold text-center text-black sm:text-xl"
                 >
-                  Entre com alguma de suas contas
+                  Cadastre-se na nosssa plataforma através de suas contas
                 </h3>
               </div>
               <div class="flex items-center justify-center row-start-2">
@@ -46,28 +56,73 @@
               <h3
                 class="row-start-1 text-lg font-semibold text-center sm:text-xl text-fontDefault"
               >
-                ou entre com o seus dados dev.finance
-                <span class="text-xl sm:text-2xl text-background">$</span>
+                ou nos informe os seus dados
               </h3>
               <div
                 class="grid items-center justify-center grid-rows-2 row-start-2"
               >
-                <input
-                  id="user"
-                  class="input-mark"
-                  type="text"
-                  placeholder="Seu usuário"
-                />
-                <input
-                  id="password"
-                  class="mt-2 input-mark"
-                  type="password"
-                  placeholder="Sua senha"
-                />
+                <div class="">
+                  <label class="label-modal" for="name">Nome completo</label>
+                  <input
+                    id="name"
+                    class="input-modal"
+                    type="text"
+                    name="name"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+                <div class="input-group-sign-up">
+                  <label class="label-modal" for="email">E-mail</label>
+                  <input
+                    id="email"
+                    class="mt-2 input-modal"
+                    type="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                    required
+                  />
+                </div>
+                <div class="input-group-sign-up">
+                  <label class="label-modal" for="cpf">CPF</label>
+                  <input
+                    id="cpf"
+                    class="mt-2 input-modal"
+                    type="text"
+                    name="cpf"
+                    placeholder="999.999.999-99"
+                    required
+                  />
+                </div>
+                <div class="input-group-sign-up">
+                  <label class="label-modal" for="celular">Celular</label>
+                  <input
+                    id="celular"
+                    class="mt-2 input-modal"
+                    type="text"
+                    name="celular"
+                    placeholder="(99) 99999-9999"
+                    required
+                  />
+                </div>
+                <div class="input-group-sign-up">
+                  <label class="label-modal" for="endereco">Endereço</label>
+                  <input
+                    id="endereco"
+                    class="mt-2 input-modal"
+                    type="text"
+                    name="endereco"
+                    placeholder="Rua Paroquia, 275 - Santo Angelo - RS"
+                    required
+                  />
+                  <small class="text-xs opacity-40 sm:text-sm"
+                    >Siga o exemplo: Rua Paroquia, 275 - Santo Angelo -
+                    RS</small
+                  >
+                </div>
               </div>
 
               <div class="mt-4 text-center">
-                <!-- tirar daqui e colocar na area de cadastro -->
                 <input
                   class="w-4 h-3 mr-1"
                   type="checkbox"
@@ -85,21 +140,24 @@
                 >
               </div>
 
-              <div class="flex items-center justify-center mt-6">
-                <button class="btn" id="buttonModal">Entrar</button>
+              <div class="flex items-center justify-center mt-6 mb-6">
+                <button class="btn" id="buttonRegister">Cadastar</button>
+              </div>
+              <div class="grid items-center justify-center">
+                <h2 class="mb-4 text-sm font-semibold text-center opacity-75">
+                  Já é um de nós?
+                </h2>
+                <a
+                  href="./sign-up.html"
+                  class="text-sm text-center btn"
+                  id="buttonModal"
+                >
+                  Logar
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="hidden border-black lg:border-solid lg:border-l-2 lg:visible lg:items-center lg:justify-center lg:shadow-xl lg:flex lg:bg-background"
-      >
-        <img
-          class="lg:w-11/12 lg:mx-4"
-          src="../images/banner.svg"
-          alt="Controle financeiro"
-        />
       </div>
     </main>
     <div

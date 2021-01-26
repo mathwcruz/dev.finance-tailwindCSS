@@ -5,7 +5,7 @@
 /* Classes CSS com estilizaçãoes de classes Tailwind*/
 
 .card {
-  @apply px-8 py-6 mb-8 bg-white rounded-md shadow-sm text-fontDefault ;
+  @apply px-8 py-6 mb-8 bg-white rounded-md shadow-sm text-fontDefault;
 }
 
 .card-h3 {
@@ -56,8 +56,16 @@
   @apply mt-3;
 }
 
+.label-modal {
+  @apply text-base text-fontDefault;
+}
+
 .input-modal {
   @apply w-full p-3 text-xs border rounded sm:text-sm focus:border-background;
+}
+
+.input-group-sign-up {
+  @apply mt-2;
 }
 
 /* CSS PURO */

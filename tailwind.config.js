@@ -20,7 +20,8 @@ module.exports = {
         'customContainer': 'min(90vw, 800px)'
       },
       gridTemplateColumns: {
-        'customGrid': '3fr 2fr'
+        'customGrid': '3fr 2fr',
+        'customGrid2': '2fr 3fr'
       },
     },
   },

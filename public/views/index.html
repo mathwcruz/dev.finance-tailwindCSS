@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="box-border w-full h-full bg-gray-200 font-poppins">
+  <body class="box-border w-full h-full bg-gray-300 font-poppins">
     <header
       class="grid w-full grid-rows-2 px-0 pt-8 pb-40 text-center bg-background"
     >
@@ -24,7 +24,7 @@
         alt="Logo dev.finance$"
       />
       <a
-        href="../views/login.html"
+        href="../views/sign-in.html"
         class="self-center row-start-2 px-1 py-2 mt-6 text-lg font-bold text-white transition duration-300 ease-in-out rounded-lg cursor-pointer w-44 sm:text-xl sm:w-60 hover:text-gray-100 justify-self-center"
       >
         Sair da sessão
@@ -44,7 +44,11 @@
           <div class="shadow-sm card">
             <h3 class="card-h3">
               <span>Entradas</span>
-              <img class="ml-2" src="../images/income.svg" alt="Imagem de entrada de saldo">
+              <img
+                class="ml-2"
+                src="../images/income.svg"
+                alt="Imagem de entrada de saldo"
+              />
             </h3>
             <p class="card-p">R$ 5.000,00</p>
           </div>
@@ -52,7 +56,11 @@
           <div class="card">
             <h3 class="card-h3">
               <span>Saídas</span>
-              <img class="ml-2" src="../images/expense.svg" alt="Imagem de saída">
+              <img
+                class="ml-2"
+                src="../images/expense.svg"
+                alt="Imagem de saída"
+              />
             </h3>
             <p class="card-p">R$ 2.000,00</p>
           </div>
@@ -60,15 +68,21 @@
           <div class="text-white shadow-lg card bg-cardBackground">
             <h3 class="card-h3">
               <span>Total</span>
-              <img class="ml-2" src="../images/total.svg" alt="Imagem de saldo total">
+              <img
+                class="ml-2"
+                src="../images/total.svg"
+                alt="Imagem de saldo total"
+              />
             </h3>
             <p class="card-p">R$ 3.000,00</p>
           </div>
-        </div>  
+        </div>
       </section>
 
       <section class="block w-full overflow-x-auto">
-        <a data-new-transaction-button class="btn-new-transaction" href="#">+ Nova transação</a>
+        <a data-new-transaction-button class="btn-new-transaction" href="#"
+          >+ Nova transação</a
+        >
         <table class="w-full border-none text-fontTable">
           <thead>
             <tr>
@@ -84,7 +98,11 @@
               <td class="font-bold text-expanse table-tbody-td">- R$ 500,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
               <td class="table-tbody-td">
-                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+                <img
+                  class="cursor-pointer"
+                  src="../images/minus.svg"
+                  alt="Remover transação"
+                />
               </td>
             </tr>
             <tr class="table-tbody-tr">
@@ -92,7 +110,11 @@
               <td class="text-income table-tbody-td">R$ 5.000,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
               <td class="table-tbody-td">
-                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+                <img
+                  class="cursor-pointer"
+                  src="../images/minus.svg"
+                  alt="Remover transação"
+                />
               </td>
             </tr>
             <tr class="table-tbody-tr">
@@ -100,7 +122,11 @@
               <td class="font-bold text-expanse table-tbody-td">- R$ 200,00</td>
               <td class="date table-tbody-td">23/01/2021</td>
               <td class="table-tbody-td">
-                <img class="cursor-pointer" src="../images/minus.svg" alt="Remover transação">
+                <img
+                  class="cursor-pointer"
+                  src="../images/minus.svg"
+                  alt="Remover transação"
+                />
               </td>
             </tr>
           </tbody>
@@ -108,30 +134,58 @@
       </section>
     </main>
 
-    <div data-modaloverlay class="fixed top-0 flex items-center justify-center w-full h-full transition duration-300 ease-in bg-backgroundModal modal-inactive">
+    <div
+      data-modaloverlay
+      class="fixed top-0 flex items-center justify-center w-full h-full transition duration-300 ease-in bg-backgroundModal modal-inactive"
+    >
       <div class="relative w-11/12 max-w-lg p-10 bg-gray-200 rounded-md">
         <div class="max-w-lg">
           <h2 class="mt-0 font-semibold">Nova Transação</h2>
           <form>
             <div class="input-group-modal">
               <label class="sr-only" for="description">Descrição</label>
-              <input name="description" placeholder="Descrição da transação" id="description" class="input-modal" type="text">
+              <input
+                name="description"
+                placeholder="Descrição da transação"
+                id="description"
+                class="input-modal"
+                type="text"
+              />
             </div>
 
             <div class="input-group-modal">
               <label class="sr-only" for="amount">Valor</label>
-              <input name="amount" placeholder="0,00" id="amount" class="input-modal" step="0.01" type="number">
-              <small class="text-xs opacity-40 sm:text-sm">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+              <input
+                name="amount"
+                placeholder="0,00"
+                id="amount"
+                class="input-modal"
+                step="0.01"
+                type="number"
+              />
+              <small class="text-xs opacity-40 sm:text-sm"
+                >Use o sinal - (negativo) para despesas e , (vírgula) para casas
+                decimais</small
+              >
             </div>
 
             <div class="input-group-modal">
               <label class="sr-only" for="date">Data</label>
-              <input name="date" id="date" class="input-modal" type="date">
+              <input name="date" id="date" class="input-modal" type="date" />
             </div>
 
             <div class="flex items-center justify-between input-group-modal">
-              <a data-button-cancel class="flex items-center justify-center w-2/5 h-12 border-2 rounded cursor-pointer text-expanse border-expanse opacity-60 hover:opacity-100">Cancelar</a>
-              <button class="w-full h-12 ml-5 text-white rounded cursor-pointer bg-cardBackground hover:bg-cardBackgroundLight" type="submit">Salvar</button>
+              <a
+                data-button-cancel
+                class="flex items-center justify-center w-2/5 h-12 border-2 rounded cursor-pointer text-expanse border-expanse opacity-60 hover:opacity-100"
+                >Cancelar</a
+              >
+              <button
+                class="w-full h-12 ml-5 text-white rounded cursor-pointer bg-cardBackground hover:bg-cardBackgroundLight"
+                type="submit"
+              >
+                Salvar
+              </button>
             </div>
           </form>
         </div>

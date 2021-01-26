@@ -780,6 +780,13 @@ video {
   margin-top: 0.75rem;
 }
 
+.label-modal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(54, 63, 95, var(--tw-text-opacity));
+}
+
 .input-modal:focus{
   --tw-border-opacity: 1;
   border-color: rgba(45, 74, 34, var(--tw-border-opacity));
@@ -799,6 +806,10 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+}
+
+.input-group-sign-up {
+  margin-top: 0.5rem;
 }
 
 /* CSS PURO */
@@ -29370,6 +29381,10 @@ main {
 
 .grid-cols-customGrid{
   grid-template-columns: 3fr 2fr;
+}
+
+.grid-cols-customGrid2{
+  grid-template-columns: 2fr 3fr;
 }
 
 .auto-cols-auto{
@@ -61376,6 +61391,10 @@ main {
     grid-template-columns: 3fr 2fr;
   }
 
+  .sm\:grid-cols-customGrid2{
+    grid-template-columns: 2fr 3fr;
+  }
+
   .sm\:auto-cols-auto{
     grid-auto-columns: auto;
   }
@@ -93313,6 +93332,10 @@ main {
 
   .md\:grid-cols-customGrid{
     grid-template-columns: 3fr 2fr;
+  }
+
+  .md\:grid-cols-customGrid2{
+    grid-template-columns: 2fr 3fr;
   }
 
   .md\:auto-cols-auto{
@@ -125254,6 +125277,10 @@ main {
     grid-template-columns: 3fr 2fr;
   }
 
+  .lg\:grid-cols-customGrid2{
+    grid-template-columns: 2fr 3fr;
+  }
+
   .lg\:auto-cols-auto{
     grid-auto-columns: auto;
   }
@@ -157193,6 +157220,10 @@ main {
     grid-template-columns: 3fr 2fr;
   }
 
+  .xl\:grid-cols-customGrid2{
+    grid-template-columns: 2fr 3fr;
+  }
+
   .xl\:auto-cols-auto{
     grid-auto-columns: auto;
   }
@@ -189130,6 +189161,10 @@ main {
 
   .\32xl\:grid-cols-customGrid{
     grid-template-columns: 3fr 2fr;
+  }
+
+  .\32xl\:grid-cols-customGrid2{
+    grid-template-columns: 2fr 3fr;
   }
 
   .\32xl\:auto-cols-auto{
