@@ -776,6 +776,38 @@ video {
   }
 }
 
+.link-another-sign {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(45, 74, 34, var(--tw-text-opacity));
+}
+
+.link-another-sign:hover{
+  --tw-text-opacity: 1;
+  color: rgba(54, 63, 95, var(--tw-text-opacity));
+}
+
+.link-another-sign{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.text-information-login {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  opacity: 0.75;
+  text-align: center;
+}
+
 .input-group-modal {
   margin-top: 0.75rem;
 }
@@ -793,11 +825,28 @@ video {
 }
 
 .input-modal{
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   border-width: 1px;
   font-size: 0.75rem;
   line-height: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   padding: 0.75rem;
+}
+
+.input-modal::-moz-placeholder{
+  --tw-placeholder-opacity: 0.5;
+}
+
+.input-modal:-ms-input-placeholder{
+  --tw-placeholder-opacity: 0.5;
+}
+
+.input-modal::placeholder{
+  --tw-placeholder-opacity: 0.5;
+}
+
+.input-modal{
   width: 100%;
 }
 

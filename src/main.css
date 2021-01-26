@@ -52,6 +52,14 @@
   @apply px-4 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out rounded-lg shadow-xl outline-none bg-background md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl hover:bg-gray-300 hover:text-background hover:shadow-none;
 }
 
+.link-another-sign {
+  @apply text-lg font-bold text-center transition duration-150 ease-in-out cursor-pointer text-background hover:text-fontDefault;
+}
+
+.text-information-login {
+  @apply mb-4 text-sm font-semibold text-center opacity-75;
+}
+
 .input-group-modal {
   @apply mt-3;
 }
@@ -61,7 +69,7 @@
 }
 
 .input-modal {
-  @apply w-full p-3 text-xs border rounded sm:text-sm focus:border-background;
+  @apply w-full p-3 text-xs placeholder-opacity-50 border rounded-lg outline-none sm:text-sm focus:border-background ;
 }
 
 .input-group-sign-up {

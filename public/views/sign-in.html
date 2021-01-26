@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   <body
-    class="box-border w-full h-full bg-gray-300 text-fontDefault font-poppins"
+    class="w-screen h-screen bg-gray-300 text-fontDefault font-poppins"
   >
-    <main class="w-full lg:grid lg:grid-cols-customGrid">
+    <main class="w-full h-full lg:grid lg:grid-cols-customGrid">
       <div
         class="flex items-center justify-center w-screen h-screen text-base lg:w-full lg:h-full"
       >
@@ -67,34 +67,16 @@
                 />
               </div>
 
-              <!-- <div class="mt-4 text-center">
-                <input
-                  class="w-4 h-3 mr-1"
-                  type="checkbox"
-                  name="polycy&terms"
-                  id="polycy&terms"
-                />
-                <label
-                  class="text-base sm:text-lg text-fontDefault"
-                  for="polycy&terms"
-                  >Eu concordo com os<a class="terms-a" href="#">
-                    Termos de Uso </a
-                  >e as<a class="terms-a" href="#">
-                    Políticas de Privacidade</a
-                  ></label
-                >
-              </div> -->
-
               <div class="flex items-center justify-center mt-6 mb-6">
                 <button class="btn" id="buttonModal">Entrar</button>
               </div>
               <div class="grid items-center justify-center">
-                <h2 class="mb-4 text-sm font-semibold text-center opacity-75">
+                <h2 class="text-information-login">
                   Ainda não é um de nós?
                 </h2>
                 <a
                   href="./sign-up.html"
-                  class="text-sm text-center btn"
+                  class="link-another-sign"
                   id="buttonRegister"
                 >
                   Cadastre-se
@@ -114,6 +96,7 @@
         />
       </div>
     </main>
+    <!-- MODAL -->
     <div
       class="fixed inset-0 flex items-center justify-center w-screen h-screen transition duration-300 ease-in modal-inactive bg-backgroundModal"
       id="modal-overlay"
