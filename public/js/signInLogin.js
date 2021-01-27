@@ -19,15 +19,16 @@ function buttonCloseModalError(button, modal) {
 
 //Validação de login
 buttonOpenModalLogin.addEventListener('click', () => {
-  const inputUser = document.getElementById('user');
+  const inputCPF = document.getElementById('cpf');
   const inputPassword = document.getElementById('password');
 
+  //FAZER UMA MÁSCARA PARA O INPUT DE CPF
   //  MELHORAR ISSO
-  if (inputUser.value === "" || inputPassword.value === "") {
+  if (inputCPF.value === "" || inputPassword.value === "") {
     openModal(modalOverlay);
     buttonCloseModalError(buttonCloseModalLogin, modalOverlay)
   } else {
-    inputUser.value = "";
+    inputCPF.value = "";
     inputPassword.value = "";
     window.location.href = "../views/index.html";
   };
