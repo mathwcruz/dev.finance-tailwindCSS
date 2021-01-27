@@ -4,6 +4,45 @@
 
 /* Classes CSS com estilizaçãoes de classes Tailwind*/
 
+/* GENERAL */
+.h3-info {
+  @apply text-lg font-semibold text-center text-background sm:text-xl;
+}
+
+.btn {
+  @apply px-4 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out rounded-lg shadow-xl outline-none bg-background md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl hover:bg-gray-300 hover:text-background hover:shadow-none;
+}
+
+.small-info {
+  @apply text-xs opacity-40 sm:text-sm;
+}
+
+/* SIGN-UP - SIGN-IN PAGE */
+.social-icons {
+  @apply p-3 my-2 text-2xl rounded-lg cursor-pointer;
+}
+
+.input-sign-in-page {
+  @apply w-56 px-4 py-2 text-base text-black placeholder-opacity-50 border rounded-lg outline-none md:text-lg sm:w-80 focus:border-background;
+}
+
+.terms-and-policy {
+  @apply text-base font-semibold text-blue-600 sm:text-lg;
+}
+
+.link-another-sign-page {
+  @apply text-lg font-bold text-center transition duration-150 ease-in-out cursor-pointer text-background hover:text-fontDefault;
+}
+
+.text-information-login {
+  @apply mb-4 text-sm font-semibold text-center opacity-75;
+}
+
+.input-group-sign-page {
+  @apply mt-2;
+}
+
+/* DASHBOARD */
 .card {
   @apply px-8 py-6 mb-8 bg-white rounded-md shadow-sm text-fontDefault;
 }
@@ -20,6 +59,7 @@
   @apply inline-block mb-3 text-lg font-semibold text-black hover:text-income;
 }
 
+/* TABELA - DASHBOARD */
 .table-thead-th {
   @apply px-8 py-4 text-xl font-semibold text-center bg-white;
 }
@@ -36,28 +76,29 @@
   @apply px-8 py-4 text-lg text-center bg-white;
 }
 
-.social-icons {
-  @apply p-3 my-2 text-2xl rounded-lg cursor-pointer;
+/* MODAL */
+.modal-overlay {
+  @apply fixed inset-0 flex items-center justify-center w-screen h-screen transition duration-300 ease-in bg-backgroundModal;
 }
 
-.input-mark {
-  @apply w-56 px-4 py-2 text-base text-black placeholder-opacity-50 border rounded-lg outline-none md:text-lg sm:w-80 focus:border-background;
+.modal {
+  @apply flex items-center justify-center w-screen h-screen mx-auto my-24 text-white bg-white rounded-md;
 }
 
-.terms-a {
-  @apply text-base font-semibold text-blue-600 sm:text-lg;
+.modal-content {
+  @apply mx-auto text-center;
 }
 
-.btn {
-  @apply px-4 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out rounded-lg shadow-xl outline-none bg-background md:px-6 md:py-3 md:text-xl lg:px-8 lg:py-4 lg:text-2xl hover:bg-gray-300 hover:text-background hover:shadow-none;
+.modal-h1 {
+  @apply mt-3 mb-4 text-lg font-bold leading-8 md:text-3xl lg:mb-8 lg:text-4xl text-fontDefault;
 }
 
-.link-another-sign {
-  @apply text-lg font-bold text-center transition duration-150 ease-in-out cursor-pointer text-background hover:text-fontDefault;
+.modal-p {
+  @apply w-full mx-auto mt-2 mb-4 text-lg font-semibold text-black md:text-2xl lg:mt-3 lg:mb-8 lg:text-xl;
 }
 
-.text-information-login {
-  @apply mb-4 text-sm font-semibold text-center opacity-75;
+.icon-alert-success {
+  @apply mx-auto my-2 text-4xl text-red-700 md:text-5xl lg:my-8 lg:text-7xl;
 }
 
 .input-group-modal {
@@ -65,15 +106,16 @@
 }
 
 .label-modal {
-  @apply text-base text-fontDefault;
+  @apply mt-2 text-base text-fontDefault ;
 }
 
 .input-modal {
   @apply w-full p-3 text-xs placeholder-opacity-50 border rounded-lg outline-none sm:text-sm focus:border-background ;
 }
 
-.input-group-sign-up {
-  @apply mt-2;
+/* FOOTER */
+.footer {
+  @apply px-0 pt-16 pb-8 text-center opacity-60 text-fontDefault;
 }
 
 /* CSS PURO */

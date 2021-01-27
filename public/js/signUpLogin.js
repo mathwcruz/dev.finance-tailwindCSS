@@ -5,9 +5,11 @@ function openModal(modal) {
 };
 
 //Função para fechar o modal 
-function closeModal(modal) {
-  modal.classList.remove('active');
-  modal.classList.add('modal-inactive');
+function buttonCloseModalError(button, modal) {
+  button.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modal.classList.add('modal-inactive');
+  });
 };
 
 //Função para mudar o ícone de alerta
@@ -17,7 +19,7 @@ function changeAlertIcon(icon) {
   icon.classList.add('text-green-700');
 };
 
-//Função para fechar o modal contendo mensagem de sucesso ao cadastar
+//Função para fechar o modal contendo mensagem de sucesso ao cadastrar
 function buttonCloseModalSuccess(button) {
   button.textContent = "Logar";
   button.classList.add('hover:bg-white');
@@ -27,25 +29,11 @@ function buttonCloseModalSuccess(button) {
   });
 };
 
-//Variáveis globais
+//Variáveis
 const buttonOpenModalLogin = document.getElementById('buttonModal');
 let modalOverlay = document.getElementById('modal-overlay');
 let AlertIcon = document.querySelector('[data-icon-alert]');
 let buttonCloseModal = document.getElementById('try-again-button');
-
-//Validação de login
-buttonOpenModalLogin.addEventListener('click', () => {
-  const inputsLogin = document.querySelectorAll('.input-mark');
-  inputsLogin.forEach((input) => {
-    if (input.value === "") {
-      openModal(modalOverlay);
-    } else {
-      input.value = "";
-      //VER PQ AO PREECHER SOMENTE UM CAMPO, ELE JA VALIDA O LOGIN/CADASTRO
-      // window.location.href = "../views/index.html";
-    };
-  });
-});
 
 //Validação de cadastro
 const buttonOpenModalRegister = document.querySelector('[data-button-register]');
@@ -56,6 +44,7 @@ buttonOpenModalRegister.addEventListener('click', () => {
   inputsRegister.forEach((input) => {
     if (input.value === "" || termsAndPolicy.checked === false) {
       openModal(modalOverlay);
+      buttonCloseModalError(buttonCloseModal, modalOverlay)
     } else {
       const titleModalSuccess = document.querySelector('[data-title-modal-success]');
       const paragraphModalSuccess = document.querySelector('[data-paragraph-modal-success]');

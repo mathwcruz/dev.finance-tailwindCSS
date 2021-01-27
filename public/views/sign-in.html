@@ -31,7 +31,7 @@
             <div class="grid grid-rows-2">
               <div class="flex items-center justify-center row-start-1">
                 <h3
-                  class="row-start-1 p-0 m-0 text-lg font-semibold text-center text-black sm:text-xl"
+                  class="row-start-1 p-0 m-0 h3-info"
                 >
                   Entre com alguma de suas contas
                 </h3>
@@ -45,7 +45,7 @@
 
             <div class="grid items-center justify-center grid-rows-2 -mt-8">
               <h3
-                class="row-start-1 text-lg font-semibold text-center sm:text-xl text-fontDefault"
+                class="row-start-1 h3-info"
               >
                 ou entre com o seus dados dev.finance
                 <span class="text-xl sm:text-2xl text-background">$</span>
@@ -53,21 +53,23 @@
               <div
                 class="grid items-center justify-center grid-rows-2 row-start-2"
               >
+                <label class="sr-only" for="user">Usuário</label>
                 <input
                   id="user"
-                  class="input-mark"
+                  class="input-sign-in-page"
                   type="text"
                   placeholder="Seu usuário"
                 />
+                <label class="sr-only" for="password">Senha</label>
                 <input
                   id="password"
-                  class="mt-2 input-mark"
+                  class="mt-2 input-sign-in-page"
                   type="password"
                   placeholder="Sua senha"
                 />
               </div>
 
-              <div class="flex items-center justify-center mt-6 mb-6">
+              <div class="flex items-center justify-center my-6">
                 <button class="btn" id="buttonModal">Entrar</button>
               </div>
               <div class="grid items-center justify-center">
@@ -76,7 +78,7 @@
                 </h2>
                 <a
                   href="./sign-up.html"
-                  class="link-another-sign"
+                  class="link-another-sign-page"
                   id="buttonRegister"
                 >
                   Cadastre-se
@@ -98,25 +100,25 @@
     </main>
     <!-- MODAL -->
     <div
-      class="fixed inset-0 flex items-center justify-center w-screen h-screen transition duration-300 ease-in modal-inactive bg-backgroundModal"
+      class="modal-overlay modal-inactive"
       id="modal-overlay"
     >
       <div
-        class="flex items-center justify-center w-screen h-screen mx-auto my-24 text-white bg-white rounded-md lg:w-3/5 lg:h-3/5 modal-content"
+        class="modal lg:w-3/5 lg:h-3/5"
       >
         <div>
-          <div class="mx-auto text-center lg:w-11/12 lg:h-11/12">
+          <div class="modal-content lg:w-11/12 lg:h-11/12">
             <i
-              class="mx-auto my-2 text-4xl text-red-700 md:text-5xl lg:my-8 lg:text-7xl fa fa-exclamation-triangle"
+              class="icon-alert-success fa fa-exclamation-triangle"
               aria-hidden="true"
             ></i>
             <h1
-              class="mt-3 mb-4 text-lg font-bold leading-8 md:text-3xl lg:mb-8 lg:text-4xl text-fontDefault"
+              class="modal-h1"
             >
               Preencha todos os campos!
             </h1>
             <p
-              class="w-full mx-auto mt-2 mb-4 text-lg font-semibold text-black md:text-2xl lg:w-3/5 lg:mt-3 lg:mb-8 lg:text-xl"
+              class="modal-p lg:w-3/5"
             >
               Você tentou logar sem preencher algum campo, por favor, tente
               novamente.
@@ -127,6 +129,6 @@
       </div>
     </div>
     <script src="../../src/loading.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/signInLogin.js"></script>
   </body>
 </html>
