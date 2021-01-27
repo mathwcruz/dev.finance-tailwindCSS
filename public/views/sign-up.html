@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src=""></script>
     <link rel="icon" href="../images/logo.svg" />
     <link rel="stylesheet" href="../../src/loading.css" />
     <link rel="stylesheet" href="../assets/styles.css" />
@@ -76,6 +77,17 @@
                         type="email"
                         name="email"
                         placeholder="seu.email@dominio.com"
+                        required
+                      />
+                    </div>
+                    <div class="input-group-sign-page">
+                      <label class="label-modal" for="birthdate">Data de nascimento</label>
+                      <input
+                        id="birthdate"
+                        class="input-modal"
+                        type="text"
+                        name="birthdate"
+                        placeholder="dd/mm/aaaa"
                         required
                       />
                     </div>
@@ -162,7 +174,7 @@
       id="modal-overlay"
     >
       <div
-        class="modal lg:w-3/5 lg:h-3/5"
+        class="modal lg:w-4/5 lg:h-4/5"
       >
         <div>
           <div class="modal-content lg:w-11/12 lg:h-11/12">

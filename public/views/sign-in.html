@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="../../src/loading.css" />
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
-  <body
-    class="w-screen h-screen bg-gray-300 text-fontDefault font-poppins"
-  >
+  <body class="w-screen h-screen bg-gray-300 text-fontDefault font-poppins">
     <main class="w-full h-full lg:grid lg:grid-cols-customGrid">
       <div
         class="flex items-center justify-center w-screen h-screen text-base lg:w-full lg:h-full"
@@ -30,9 +28,7 @@
             </div>
             <div class="grid grid-rows-2">
               <div class="flex items-center justify-center row-start-1">
-                <h3
-                  class="row-start-1 p-0 m-0 h3-info"
-                >
+                <h3 class="row-start-1 p-0 m-0 h3-info">
                   Entre com alguma de suas contas
                 </h3>
               </div>
@@ -44,9 +40,7 @@
             </div>
 
             <div class="grid items-center justify-center grid-rows-2 -mt-8">
-              <h3
-                class="row-start-1 h3-info"
-              >
+              <h3 class="row-start-1 h3-info">
                 ou entre com o seus dados dev.finance
                 <span class="text-xl sm:text-2xl text-background">$</span>
               </h3>
@@ -59,6 +53,7 @@
                   class="input-sign-in-page"
                   type="text"
                   placeholder="Seu usuário"
+                  required
                 />
                 <label class="sr-only" for="password">Senha</label>
                 <input
@@ -66,6 +61,7 @@
                   class="mt-2 input-sign-in-page"
                   type="password"
                   placeholder="Sua senha"
+                  required
                 />
               </div>
 
@@ -73,9 +69,7 @@
                 <button class="btn" id="buttonModal">Entrar</button>
               </div>
               <div class="grid items-center justify-center">
-                <h2 class="text-information-login">
-                  Ainda não é um de nós?
-                </h2>
+                <h2 class="text-information-login">Ainda não é um de nós?</h2>
                 <a
                   href="./sign-up.html"
                   class="link-another-sign-page"
@@ -99,27 +93,16 @@
       </div>
     </main>
     <!-- MODAL -->
-    <div
-      class="modal-overlay modal-inactive"
-      id="modal-overlay"
-    >
-      <div
-        class="modal lg:w-3/5 lg:h-3/5"
-      >
+    <div class="modal-overlay modal-inactive" id="modal-overlay">
+      <div class="modal lg:w-4/5 lg:h-4/5">
         <div>
           <div class="modal-content lg:w-11/12 lg:h-11/12">
             <i
               class="icon-alert-success fa fa-exclamation-triangle"
               aria-hidden="true"
             ></i>
-            <h1
-              class="modal-h1"
-            >
-              Preencha todos os campos!
-            </h1>
-            <p
-              class="modal-p lg:w-3/5"
-            >
+            <h1 class="modal-h1">Preencha todos os campos!</h1>
+            <p class="modal-p lg:w-3/5">
               Você tentou logar sem preencher algum campo, por favor, tente
               novamente.
             </p>
