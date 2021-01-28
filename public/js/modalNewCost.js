@@ -10,4 +10,4 @@ buttonNewTransaction.addEventListener('click', () => {
 buttonCancelNewTransaction.addEventListener('click', () => {
   modalOverlay.classList.remove('active');
   modalOverlay.classList.add('modal-inactive');
-})
+});

@@ -1,28 +1,34 @@
-//Variáveis
-const buttonOpenModalLogin = document.getElementById('buttonModal');
-const buttonCloseModalLogin = document.getElementById('try-again-button');
-let modalOverlay = document.getElementById('modal-overlay');
+import {
+  buttonOpenModalLogin,
+  buttonCloseModalLogin,
+  modalOverlay,
+  openModal,
+  buttonCloseModalError,
+} from './utils.js';
 
-//Função para abrir o modal
-function openModal(modal) {
-  modal.classList.remove('modal-inactive');
-  modal.classList.add('active');
-};
+import { maskReplace, masks } from './masksAndRegEx.js';
 
-//Função para fechar o modal 
-function buttonCloseModalError(button, modal) {
-  button.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modal.classList.add('modal-inactive');
-  });
-};
+//Máscara
+// const masks = {
+//   cpf(value) {
+//     return value
+//       .replace(/\D/g, '')
+//       .replace(/(\d{3})(\d)/, '$1.$2')
+//       .replace(/(\d{3})(\d)/, '$1.$2')
+//       .replace(/(\d{3})(\d{1,2})/, '$1-$2')
+//       .replace(/(-\d{2})\d+?$/, '$1');
+//   }
+// };
+
+const inputs = document.querySelectorAll('.input-sign-in-page');
+
+maskReplace();
 
 //Validação de login
 buttonOpenModalLogin.addEventListener('click', () => {
   const inputCPF = document.getElementById('cpf');
   const inputPassword = document.getElementById('password');
 
-  //FAZER UMA MÁSCARA PARA O INPUT DE CPF
   //  MELHORAR ISSO
   if (inputCPF.value === "" || inputPassword.value === "") {
     openModal(modalOverlay);

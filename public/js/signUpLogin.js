@@ -1,39 +1,26 @@
-//Função para abrir o modal
-function openModal(modal) {
-  modal.classList.remove('modal-inactive');
-  modal.classList.add('active');
-};
+import {
+  openModal,
+  buttonCloseModalError,
+  changeAlertIcon,
+  buttonCloseModalSuccess,
+  modalOverlay,
+  AlertIcon,
+  buttonCloseModal
+} from './utils.js';
 
-//Função para fechar o modal 
-function buttonCloseModalError(button, modal) {
-  button.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modal.classList.add('modal-inactive');
+import { masks } from './masksAndRegEx.js';
+
+//Máscara
+function maskReplace() {
+  const inputs = document.querySelectorAll('.mask').forEach(input => {
+    const field = input.name;
+    input.addEventListener('input', (e) => {
+      e.target.value = masks[field](e.target.value);
+    }, false);
   });
 };
 
-//Função para mudar o ícone de alerta
-function changeAlertIcon(icon) {
-  icon.classList.remove('fa-exclamation-triangle');
-  icon.classList.add('fa-check');
-  icon.classList.add('text-green-700');
-};
-
-//Função para fechar o modal contendo mensagem de sucesso ao cadastrar
-function buttonCloseModalSuccess(button) {
-  button.textContent = "Logar";
-  button.classList.add('hover:bg-white');
-
-  button.addEventListener('click', () => {
-    window.location.href = "../views/sign-in.html";
-  });
-};
-
-//Variáveis
-const buttonOpenModalLogin = document.getElementById('buttonModal');
-let modalOverlay = document.getElementById('modal-overlay');
-let AlertIcon = document.querySelector('[data-icon-alert]');
-let buttonCloseModal = document.getElementById('try-again-button');
+maskReplace();
 
 //Validação de cadastro
 const buttonOpenModalRegister = document.querySelector('[data-button-register]');
@@ -60,46 +47,4 @@ buttonOpenModalRegister.addEventListener('click', () => {
       //VER PQ AO PREECHER SOMENTE UM CAMPO, ELE JA VALIDA O LOGIN/CADASTRO
     };
   });
-});
-
-//Máscaras
-const masks = {
-  birthdate (date) {
-    return date
-    .replace(/\D/g, '')
-    .replace(/(\d{2})(\d)/, '$1/$2')
-    .replace(/(\d{2})(\d)/, '$1/$2')
-    .replace(/(\/\d{4})\d+?$/, '$1');
-  },
-  cpf (value) {
-    return value
-    .replace(/\D/g, '')
-    .replace(/(\d{3})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d{1,2})/, '$1-$2')
-    .replace(/(-\d{2})\d+?$/, '$1');
-  },
-  phone (phone) {
-      return phone
-      .replace(/\D/g, '')
-      .replace(/(\d{2})(\d)/, '($1) $2')
-      .replace(/(\d{4})(\d)/, '$1-$2')
-      .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
-      .replace(/(-\d{4})\d+?$/, '$1');
-  },
-  cep (cep) {
-    return cep
-    .replace(/\D/g, '')
-    .replace(/(\d{5})(\d)/, '$1-$2')
-    .replace(/(-\d{3})\d+?$/, '$1');
-  }
-  
-};
-
-//Função que faz a máscara funcionar
-document.querySelectorAll('.mask').forEach(input => {
-  const field = input.name;
-  input.addEventListener('input', (e) => {
-    e.target.value = masks[field](e.target.value);
-  }, false);
 });
