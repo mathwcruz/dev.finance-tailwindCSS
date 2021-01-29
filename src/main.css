@@ -110,11 +110,11 @@ input:valid {
 }
 
 .label-modal {
-  @apply mt-2 text-base text-fontDefault ;
+  @apply mt-2 text-base text-fontDefault;
 }
 
 .input-modal {
-  @apply w-full p-3 text-xs placeholder-opacity-50 border rounded-lg outline-none sm:text-sm focus:border-background ;
+  @apply w-full p-3 text-xs placeholder-opacity-50 border rounded-lg outline-none sm:text-sm focus:border-background;
 }
 
 /* FOOTER */
