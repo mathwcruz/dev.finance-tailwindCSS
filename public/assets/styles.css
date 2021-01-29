@@ -803,6 +803,7 @@ input:valid {
 }
 
 .btn-new-transaction {
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   font-size: 1.125rem;

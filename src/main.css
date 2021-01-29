@@ -60,7 +60,7 @@ input:valid {
 }
 
 .btn-new-transaction {
-  @apply inline-block mb-3 text-lg font-semibold text-black hover:text-income;
+  @apply inline-block mb-3 text-lg font-semibold text-black cursor-pointer hover:text-income;
 }
 
 /* TABELA - DASHBOARD */
