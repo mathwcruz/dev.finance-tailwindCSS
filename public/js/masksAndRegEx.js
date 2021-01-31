@@ -26,6 +26,7 @@ export const masks = {
 };
 
 //Função que faz a máscara funcionar
+//REFATORAR PARA UTILIZAR APEANS UMA VEZ
 export function maskReplace() {
   const inputs = document
     .querySelectorAll(".input-sign-in-page")
@@ -39,7 +40,7 @@ export function maskReplace() {
         false
       );
     });
-}
+};
 
 //VER COMO VALIDAR AS EXPRESSOES E RETORNAR TRUE OU FALSE
 /*

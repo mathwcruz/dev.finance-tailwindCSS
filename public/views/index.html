@@ -25,9 +25,9 @@
       />
       <a
         href="../views/sign-in.html"
-        class="self-center row-start-2 px-1 py-2 mt-6 text-lg font-bold text-white transition duration-300 ease-in-out rounded-lg cursor-pointer w-44 sm:text-xl sm:w-60 hover:text-gray-100 justify-self-center"
+        class="self-center row-start-2 px-1 py-2 mt-6 text-lg font-bold text-white transition duration-300 ease-in-out rounded-lg cursor-pointer w-44 sm:text-xl sm:w-60 hover:text-gray-200 justify-self-center"
       >
-        Sair da sessão
+        Sair
       </a>
       <div class="flex items-center justify-center row-start-3">
         <i class="p-2 text-xl text-white fas fa-user"></i>
@@ -53,7 +53,7 @@
                 alt="Imagem de entrada de saldo"
               />
             </h3>
-            <p id="incomeDisplay" class="card-p">R$ 5.000,00</p>
+            <p id="incomeDisplay" class="card-p">R$ 0,00</p>
           </div>
 
           <div class="card">
@@ -65,7 +65,7 @@
                 alt="Imagem de saída"
               />
             </h3>
-            <p id="expenseDisplay" class="card-p">R$ 2.000,00</p>
+            <p id="expenseDisplay" class="card-p">R$ 0,00</p>
           </div>
 
           <div class="text-white shadow-lg card bg-cardBackground">
@@ -77,13 +77,13 @@
                 alt="Imagem de saldo total"
               />
             </h3>
-            <p id="totalDisplay" class="card-p">R$ 3.000,00</p>
+            <p id="totalDisplay" class="card-p">R$ 0,00</p>
           </div>
         </div>
       </section>
 
       <section class="block w-full overflow-x-auto">
-        <a data-new-transaction-button class="btn-new-transaction"
+        <a onclick="Modal.open()" class="btn-new-transaction"
           >+ Nova transação</a
         >
         <table class="w-full border-none text-fontTable">
@@ -95,18 +95,17 @@
               <th class="table-thead-th"></th>
             </tr>
           </thead>
-          <tbody data-tbody>
-          </tbody>
+          <tbody data-tbody></tbody>
         </table>
       </section>
     </main>
-    
+
     <!-- MODAL -->
     <div data-modaloverlay class="modal-overlay modal-inactive">
       <div class="relative w-11/12 max-w-lg p-10 bg-gray-200 rounded-md">
         <div class="max-w-lg">
           <h2 class="mt-0 font-semibold">Nova Transação</h2>
-          <form>
+          <form onsubmit="Form.submit(event)">
             <div class="input-group-modal">
               <label class="sr-only" for="description">Descrição</label>
               <input
@@ -136,17 +135,21 @@
 
             <div class="input-group-modal">
               <label class="sr-only" for="date">Data</label>
-              <input name="date" id="date" class="input-modal" type="date" />
+              <input 
+              name="date" 
+              id="date" 
+              class="input-modal" 
+              type="date" 
+              />
             </div>
 
             <div class="flex items-center justify-between input-group-modal">
               <a
-                data-button-cancel
+                onclick="Modal.close()"
                 class="flex items-center justify-center w-2/5 h-12 font-semibold text-white border-2 rounded opacity-100 cursor-pointer bg-expense text-expanse border-expanse hover:opacity-70"
                 >Cancelar</a
               >
               <button
-                data-button-transaction
                 class="w-full h-12 ml-5 text-white rounded cursor-pointer bg-cardBackground hover:bg-cardBackgroundLight"
               >
                 Salvar
@@ -157,35 +160,11 @@
       </div>
     </div>
 
-    <!-- MODAL -->
-    <div class="modal-overlay modal-inactive" id="modal-overlay">
-      <div class="modal lg:w-4/5 lg:h-4/5">
-        <div>
-          <div class="modal-content lg:w-11/12 lg:h-11/12">
-            <i
-              class="icon-alert-success fa fa-exclamation-triangle"
-              aria-hidden="true"
-            ></i>
-            <h1 class="modal-h1">Preencha todos os campos!</h1>
-            <p class="modal-p lg:w-3/5">
-              Você tentou realizar uma nova transação sem preencher algum campo, por favor, tente
-              novamente.
-            </p>
-            <button class="btn" id="try-again-button">Tentar novamente</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="footer">
       <p>dev.finance$</p>
     </footer>
 
     <script src="../../src/loading.js"></script>
-    <script type="module" src="../js/addTransactionIntoHTML.js"></script>
-    <script type="module" src="../js/updateDashboardValue.js"></script>
-    <script src="../js/modalNewCost.js"></script>
-    <script type="module" src="../js/addNewTransaction.js"></script>
-    <script type="module" src="../js/formActions.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

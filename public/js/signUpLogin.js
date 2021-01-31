@@ -1,16 +1,9 @@
-import {
-  openModal,
-  buttonCloseModalError,
-  changeAlertIcon,
-  buttonCloseModalSuccess,
-  modalOverlay,
-  AlertIcon,
-  buttonCloseModal,
-} from "./utils.js";
+import { Modal } from "./utils.js";
 
 import { masks } from "./masksAndRegEx.js";
 
 //Máscara
+//REFATORAR PARA UTILIZAR APEANS UMA VEZ
 function maskReplace() {
   document.querySelectorAll(".mask").forEach((input) => {
     const field = input.name;
@@ -24,10 +17,9 @@ function maskReplace() {
 maskReplace();
 
 //Validação de cadastro
-const buttonOpenModalRegister = document.querySelector(
-  "[data-button-register]"
-);
+const buttonOpenModalRegister = document.querySelector("[data-button-register]");
 const termsAndPolicy = document.getElementById("polycy&terms");
+const icon = document.querySelector('[data-icon]');
 
 buttonOpenModalRegister.addEventListener("click", () => {
   const inputsRegister = document.querySelectorAll(".input-modal");
@@ -59,19 +51,22 @@ buttonOpenModalRegister.addEventListener("click", () => {
   //VER PQ AO PREECHER SOMENTE UM CAMPO, ELE JA VALIDA O LOGIN/CADASTRO
   inputsRegister.forEach((input) => {
     if (input.value === "" || termsAndPolicy.checked === false) {
-      openModal(modalOverlay);
-      buttonCloseModalError(buttonCloseModal, modalOverlay);
+      Modal.openModal(Modal.modalOverlay);
+      Modal.closeModal(Modal.buttonCloseModal, Modal.modalOverlay);
     } else {
       const titleModalSuccess = document.querySelector("[data-title-modal-success]");
       const paragraphModalSuccess = document.querySelector("[data-paragraph-modal-success]");
-      changeAlertIcon(AlertIcon);
+      Modal.changeIcon(icon);
 
       input.value = "";
 
-      openModal(modalOverlay);
+      Modal.openModal(Modal.modalOverlay);
       titleModalSuccess.textContent = "Cadastro efetuado com sucesso!";
       paragraphModalSuccess.textContent = "Clique no botão abaixo para logar-se";
-      buttonCloseModalSuccess(buttonCloseModal);
+      Modal.buttonCloseModal.innerHTML = "Logar";
+      Modal.buttonCloseModal.addEventListener('click', () => {
+        window.location.href = '../views/sign-in.html';
+      })
     };
   });
 });
