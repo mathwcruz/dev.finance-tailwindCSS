@@ -14,15 +14,12 @@ import { masks } from "./masksAndRegEx.js";
 function maskReplace() {
   document.querySelectorAll(".mask").forEach((input) => {
     const field = input.name;
-    input.addEventListener(
-      "input",
-      (e) => {
+    input.addEventListener("input",(e) => {
         e.target.value = masks[field](e.target.value);
-      },
-      false
+      }, false
     );
   });
-}
+};
 
 maskReplace();
 
@@ -65,21 +62,16 @@ buttonOpenModalRegister.addEventListener("click", () => {
       openModal(modalOverlay);
       buttonCloseModalError(buttonCloseModal, modalOverlay);
     } else {
-      const titleModalSuccess = document.querySelector(
-        "[data-title-modal-success]"
-      );
-      const paragraphModalSuccess = document.querySelector(
-        "[data-paragraph-modal-success]"
-      );
+      const titleModalSuccess = document.querySelector("[data-title-modal-success]");
+      const paragraphModalSuccess = document.querySelector("[data-paragraph-modal-success]");
       changeAlertIcon(AlertIcon);
 
       input.value = "";
 
       openModal(modalOverlay);
       titleModalSuccess.textContent = "Cadastro efetuado com sucesso!";
-      paragraphModalSuccess.textContent =
-        "Clique no botão abaixo para logar-se";
+      paragraphModalSuccess.textContent = "Clique no botão abaixo para logar-se";
       buttonCloseModalSuccess(buttonCloseModal);
-    }
+    };
   });
 });

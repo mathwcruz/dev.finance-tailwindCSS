@@ -23,12 +23,6 @@ export const masks = {
       .replace(/(\d{4})-(\d)(\d{4})/, "$1$2-$3")
       .replace(/(-\d{4})\d+?$/, "$1");
   },
-  cep(cep) {
-    return cep
-      .replace(/\D/g, "")
-      .replace(/(\d{5})(\d)/, "$1-$2")
-      .replace(/(-\d{3})\d+?$/, "$1");
-  },
 };
 
 //Função que faz a máscara funcionar
@@ -53,8 +47,7 @@ const inputs = document.querySelectorAll(".input-modal");
 
 export const patterns = {
   name: /^[\w.*]{1,+}$/,
-  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,15})(\.[a-z]{2,8})?$/,
-  address: /[\w.*]{1,+}/,
+  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,15})(\.[a-z]{2,8})?$/
 };
 
 export function validate(campo, regEx) {

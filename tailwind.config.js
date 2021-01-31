@@ -10,7 +10,7 @@ module.exports = {
         cardBackgroundLight: "#3dd705",
         fontTable: "#969cb3",
         income: "#12a454",
-        expanse: "#e92929",
+        expense: "#e92929",
         backgroundModal: "rgba(0, 0, 0, 0.7)"
       },
       fontFamily: {

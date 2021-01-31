@@ -30,9 +30,9 @@ buttonOpenModalLogin.addEventListener('click', () => {
   const inputPassword = document.getElementById('password');
 
   //  MELHORAR ISSO
-  if (inputCPF.value === "" || inputPassword.value === "") {
+  if (inputCPF.value.trim() === "" || inputPassword.value.trim() === "") {
     openModal(modalOverlay);
-    buttonCloseModalError(buttonCloseModalLogin, modalOverlay)
+    buttonCloseModalError(buttonCloseModalLogin, modalOverlay);
   } else {
     inputCPF.value = "";
     inputPassword.value = "";

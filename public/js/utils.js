@@ -1,10 +1,21 @@
-//Função para abrir o modal
+//Variáveis Sign-in Sign-up page
+export const buttonOpenModalLogin = document.getElementById('buttonModal');
+export const buttonCloseModalLogin = document.getElementById('try-again-button');
+export let modalOverlay = document.getElementById('modal-overlay');
+export let AlertIcon = document.querySelector('[data-icon-alert]');
+export let buttonCloseModal = document.getElementById('try-again-button');
+
+//Variáveis Modal - New Transaction
+export const buttonNewTransaction = document.querySelector('[data-new-transaction-button]');
+export const buttonCancelNewTransaction = document.querySelector('[data-button-cancel]');
+
+//Função para abrir o modal da sign-up sign-in page
 export function openModal(modal) {
   modal.classList.remove('modal-inactive');
   modal.classList.add('active');
 };
 
-//Função para fechar o modal 
+//Função para fechar o modal da sign-up sign-in page
 export function buttonCloseModalError(button, modal) {
   button.addEventListener('click', () => {
     modal.classList.remove('active');
@@ -29,9 +40,27 @@ export function buttonCloseModalSuccess(button) {
   });
 };
 
-//Variáveis
-export const buttonOpenModalLogin = document.getElementById('buttonModal');
-export const buttonCloseModalLogin = document.getElementById('try-again-button');
-export let modalOverlay = document.getElementById('modal-overlay');
-export let AlertIcon = document.querySelector('[data-icon-alert]');
-export let buttonCloseModal = document.getElementById('try-again-button');
+//Função para formatar a moeda
+export function formatCurrency(value) {
+  const signal = Number(value) < 0 ? '-' : ''; //recebendo sinal de negativo caso o número seja menor que 0 e não irá receber nada se for maior do que 0
+
+  value = String(value).replace(/\D/g, ''); //trocando tudo que não for número, por um espaço em branco
+
+  value = Number(value) / 100; //formatando o número com casas decimais
+
+  value = value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL"
+  });//formatando na moeda brasileira (R$)
+
+  return signal + value; //retornando o valor formatado
+};
+
+//Função para formatar o valor da transação
+export function formatAmount(value) {
+  value = Number(value) * 100;
+
+  console.log(value);
+
+  return value;
+};
