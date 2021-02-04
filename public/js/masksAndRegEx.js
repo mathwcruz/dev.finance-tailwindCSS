@@ -26,36 +26,13 @@ export const masks = {
 };
 
 //Função que faz a máscara funcionar
-//REFATORAR PARA UTILIZAR APEANS UMA VEZ
 export function maskReplace() {
-  const inputs = document
-    .querySelectorAll(".input-sign-in-page")
-    .forEach((input) => {
+  const inputs = document.querySelectorAll('#cpf');
+    inputs.forEach((input) => {
       const field = input.name;
-      input.addEventListener(
-        "input",
-        (e) => {
+      input.addEventListener("input", (e) => {
           e.target.value = masks[field](e.target.value);
-        },
-        false
+        }, false
       );
     });
 };
-
-//VER COMO VALIDAR AS EXPRESSOES E RETORNAR TRUE OU FALSE
-/*
-const inputs = document.querySelectorAll(".input-modal");
-
-export const patterns = {
-  name: /^[\w.*]{1,+}$/,
-  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,15})(\.[a-z]{2,8})?$/
-};
-
-export function validate(campo, regEx) {
-  if (regEx.test(campo.value) === true) {
-    campo.classList.add() = "valid";
-  } else {
-    campo.classList.add() = "invalid";
-  }
-}
-*/

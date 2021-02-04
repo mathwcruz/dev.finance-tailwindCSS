@@ -1,15 +1,14 @@
-import { Modal } from "./utils.js";
+import { Modal, Login } from "./utils.js";
 
 import { masks } from "./masksAndRegEx.js";
 
 //Máscara
-//REFATORAR PARA UTILIZAR APEANS UMA VEZ
 function maskReplace() {
   document.querySelectorAll(".mask").forEach((input) => {
     const field = input.name;
-    input.addEventListener("input",(e) => {
-        e.target.value = masks[field](e.target.value);
-      }, false
+    input.addEventListener("input", (e) => {
+      e.target.value = masks[field](e.target.value);
+    }, false
     );
   });
 };
@@ -21,52 +20,31 @@ const buttonOpenModalRegister = document.querySelector("[data-button-register]")
 const termsAndPolicy = document.getElementById("polycy&terms");
 const icon = document.querySelector('[data-icon]');
 
+const validations = [];
+
+function validateForm() {
+  if (validations.includes('false') || termsAndPolicy.checked === false) {
+    Modal.openModal(Modal.modalOverlay);
+    Modal.closeModal(Modal.buttonCloseModal, Modal.modalOverlay);
+  } else {
+    //VER PQ NAO TA ENTRANDO NESSA CONDIÇÃO CASO ESTEJA TUDO PREENCHIDO
+    const titleModalSuccess = document.querySelector("[data-title-modal-success]");
+    const paragraphModalSuccess = document.querySelector("[data-paragraph-modal-success]");
+
+    Modal.openModal(Modal.modalOverlay);
+    Modal.changeIcon(icon);
+    titleModalSuccess.textContent = "Cadastro efetuado com sucesso!";
+    paragraphModalSuccess.textContent = "Clique no botão abaixo para logar-se";
+    Modal.buttonCloseModal.innerHTML = "Logar";
+    Modal.buttonCloseModal.addEventListener('click', () => {
+      window.location.href = '../views/sign-in.html';
+    });
+  };
+};
+
 buttonOpenModalRegister.addEventListener("click", () => {
-  const inputsRegister = document.querySelectorAll(".input-modal");
+  const inputs = document.querySelectorAll(".input-modal");
 
-  //VER PQ NAO FUNCIONA
-  // for (let x = 0; x < inputsRegister.length; x++) {
-  //   if (inputsRegister[x].value === "" || termsAndPolicy.checked === false) {
-  //     openModal(modalOverlay);
-  //     buttonCloseModalError(buttonCloseModal, modalOverlay);
-  //   } else {
-  //     const titleModalSuccess = document.querySelector(
-  //       "[data-title-modal-success]"
-  //     );
-  //     const paragraphModalSuccess = document.querySelector(
-  //       "[data-paragraph-modal-success]"
-  //     );
-  //     changeAlertIcon(AlertIcon);
-
-  //     input.value = "";
-
-  //     openModal(modalOverlay);
-  //     titleModalSuccess.textContent = "Cadastro efetuado com sucesso!";
-  //     paragraphModalSuccess.textContent =
-  //       "Clique no botão abaixo para logar-se";
-  //     buttonCloseModalSuccess(buttonCloseModal);
-  //   }
-  // }
-
-  //VER PQ AO PREECHER SOMENTE UM CAMPO, ELE JA VALIDA O LOGIN/CADASTRO
-  inputsRegister.forEach((input) => {
-    if (input.value === "" || termsAndPolicy.checked === false) {
-      Modal.openModal(Modal.modalOverlay);
-      Modal.closeModal(Modal.buttonCloseModal, Modal.modalOverlay);
-    } else {
-      const titleModalSuccess = document.querySelector("[data-title-modal-success]");
-      const paragraphModalSuccess = document.querySelector("[data-paragraph-modal-success]");
-      Modal.changeIcon(icon);
-
-      input.value = "";
-
-      Modal.openModal(Modal.modalOverlay);
-      titleModalSuccess.textContent = "Cadastro efetuado com sucesso!";
-      paragraphModalSuccess.textContent = "Clique no botão abaixo para logar-se";
-      Modal.buttonCloseModal.innerHTML = "Logar";
-      Modal.buttonCloseModal.addEventListener('click', () => {
-        window.location.href = '../views/sign-in.html';
-      })
-    };
-  });
+  Login.validateEachInput(inputs, validations);
+  validateForm();
 });
