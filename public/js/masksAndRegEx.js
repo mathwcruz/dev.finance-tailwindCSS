@@ -24,15 +24,3 @@ export const masks = {
       .replace(/(-\d{4})\d+?$/, "$1");
   },
 };
-
-//Função que faz a máscara funcionar
-export function maskReplace() {
-  const inputs = document.querySelectorAll('#cpf');
-    inputs.forEach((input) => {
-      const field = input.name;
-      input.addEventListener("input", (e) => {
-          e.target.value = masks[field](e.target.value);
-        }, false
-      );
-    });
-};

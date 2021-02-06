@@ -20,17 +20,3 @@ export const Modal = {
     icon.classList.add('text-background');
   }
 };
-
-export const Login = {
-  //Métodos
-  validateEachInput(inputs, validations) {
-    inputs.forEach(input => {
-      if (input.value === "") {
-        validations.push('false');
-      } else {
-        validations.push('true');
-      };
-    });
-    return validations;
-  }
-};

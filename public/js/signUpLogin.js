@@ -1,4 +1,4 @@
-import { Modal, Login } from "./utils.js";
+import { Modal } from "./utils.js";
 
 import { masks } from "./masksAndRegEx.js";
 
@@ -20,14 +20,18 @@ const buttonOpenModalRegister = document.querySelector("[data-button-register]")
 const termsAndPolicy = document.getElementById("polycy&terms");
 const icon = document.querySelector('[data-icon]');
 
-const validations = [];
-
+//Função para validar o formulário de cadastro
 function validateForm() {
-  if (validations.includes('false') || termsAndPolicy.checked === false) {
+  const inputName = document.getElementById('name').value;
+  const inputEmail = document.getElementById('email').value;
+  const inputBirthdate = document.getElementById('birthdate').value;
+  const inputCPF = document.getElementById('cpf').value;
+  const inputPhone = document.getElementById('phone').value;
+
+  if(inputName === "" || inputEmail === "" || inputBirthdate === "" || inputCPF === "" || inputPhone === "" || termsAndPolicy.checked === false) {
     Modal.openModal(Modal.modalOverlay);
     Modal.closeModal(Modal.buttonCloseModal, Modal.modalOverlay);
   } else {
-    //VER PQ NAO TA ENTRANDO NESSA CONDIÇÃO CASO ESTEJA TUDO PREENCHIDO
     const titleModalSuccess = document.querySelector("[data-title-modal-success]");
     const paragraphModalSuccess = document.querySelector("[data-paragraph-modal-success]");
 
@@ -43,8 +47,5 @@ function validateForm() {
 };
 
 buttonOpenModalRegister.addEventListener("click", () => {
-  const inputs = document.querySelectorAll(".input-modal");
-
-  Login.validateEachInput(inputs, validations);
   validateForm();
 });

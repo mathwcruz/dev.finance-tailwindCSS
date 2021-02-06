@@ -131,9 +131,9 @@ const DOM = {
 const Utils = {
   //formatando o valor da transação
   formatAmount(value) {
-    value = Number(value.replace(/\,\./g, "")) * 100;
+    value = value * 100;
 
-    return value;
+    return Math.round(value);
   },
 
   //formatando a data da transação
