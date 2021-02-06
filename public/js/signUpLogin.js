@@ -27,8 +27,9 @@ function validateForm() {
   const inputBirthdate = document.getElementById('birthdate').value;
   const inputCPF = document.getElementById('cpf').value;
   const inputPhone = document.getElementById('phone').value;
+  const inputPassword = document.getElementById('password').value;
 
-  if(inputName === "" || inputEmail === "" || inputBirthdate === "" || inputCPF === "" || inputPhone === "" || termsAndPolicy.checked === false) {
+  if(inputName === "" || inputEmail === "" || inputBirthdate === "" || inputCPF === "" || inputPhone === "" || inputPassword === "" ||termsAndPolicy.checked === false) {
     Modal.openModal(Modal.modalOverlay);
     Modal.closeModal(Modal.buttonCloseModal, Modal.modalOverlay);
   } else {
