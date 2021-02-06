@@ -8,7 +8,7 @@
 
 ## <p><h2 align="center">Projeto de controle financeiro desenvolvido na Maratona Discover ministrada pela [Rocketseat](https://app.rocketseat.com.br/dashboard)</h2> </p>
 
-## <p><h2 align="center">Fui além do desafio proposto</h2></p>
+## **<h2 align="center">Fui além do desafio proposto</h2>**
 
 ### <h3 align="center">Além de adicionar novas features ao projeto: página de cadastro e de login, toda a estilização da aplicação foi feita utilizando o framework [TailwindCSS](https://tailwindcss.com/docs)</h3>
 
