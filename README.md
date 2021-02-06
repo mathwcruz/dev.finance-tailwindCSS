@@ -58,7 +58,7 @@
 
 ## :memo: Licença
 
-<p align="center">Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/rocketseat-education/maratona-discover-01/blob/main/LICENSE.md) para mais detalhes.</p>
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/rocketseat-education/maratona-discover-01/blob/main/LICENSE.md) para mais detalhes.
 
 ## **<p align="center">Muito obrigado ao pessoal da Rocketseat 🚀 pelo excelente conteúdo e didática, é nítido o impacto dessa empresa nos meus estudos 🙂</p>**
 
