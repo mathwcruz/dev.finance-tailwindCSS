@@ -1,13 +1,10 @@
 <h1 align="center">
-<br>
-  <img src="./public/images/logo.svg" alt="Logo do dev.finance$" width="200">
-<br>
-<br> 
+  <img src="./public/images/logo.svg" alt="Logo do dev.finance$" width="350">
 </h1>
 
 <br>
 
-## **<h1 align="center">Aplicação front end 📟 👨‍💻</h1>**
+## **<h2 align="center">Aplicação front end 📟 👨‍💻</h2>**
 
 ## <p><h2 align="center">Projeto de controle financeiro desenvolvido na Maratona Discover ministrada pela [Rocketseat](https://app.rocketseat.com.br/dashboard)</h2> </p>
 
@@ -55,6 +52,8 @@
 <img src="https://www.markusantonwolf.com/media/pages/blog/tailwind-css/265298487-1596675041/tailwind-css-logo.svg" alt="tailwindcss" width="70" height="70"/>
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" alt="javascript" width="70" height="70"/>
 </p>
+
+<br>
 
 ## :memo: Licença
 
