@@ -1,18 +1,18 @@
 <h1 align="center">
-  <img src="./public/images/logo.svg" alt="Logo do dev.finance$" width="350">
+  <img src="./public/images/logo.svg" alt="dev.finance$ logo" width="350">
 </h1>
 
 <br>
 
-## **<h2 align="center">Aplicação front end 📟 👨‍💻</h2>**
+## **<h2 align="center">Front end application 📟 👨‍💻</h2>**
 
-## <p><h2 align="center">Projeto de controle financeiro desenvolvido na Maratona Discover ministrada pela [Rocketseat](https://app.rocketseat.com.br/dashboard)</h2> </p>
+## <p><h2 align="center">Financial control project developed at the Discover Marathon taught by [Rocketseat](https://app.rocketseat.com.br/dashboard)</h2> </p>
 
-## **<h2 align="center">Fui além do desafio proposto</h2>**
+## **<h2 align="center">I went beyond the proposed challenge</h2>**
 
-### <h3 align="center">Além de adicionar novas features ao projeto: página de cadastro e de login, toda a estilização da aplicação foi feita utilizando o framework [TailwindCSS](https://tailwindcss.com/docs)</h3>
+### <h3 align="center">In addition to adding new features to the project: registration and login page, all application styling was done using the framework [TailwindCSS](https://tailwindcss.com/docs)</h3>
 
-# **Página de cadastro e de login - Desktop Layout** 💻
+# **Registration and login page - Desktop Layout** 💻
 
 <p align="center">
   <img src="./github/desktop-login.gif" width="1400px"/>
@@ -28,7 +28,7 @@
 
 <br>
 
-# **Página de cadastro e de login - Mobile Layout** 📱
+# **Registration and login page - Mobile Layout** 📱
 
 <p align="center">
   <img src="./github//mobile-login.gif" width="375px"/>
@@ -44,7 +44,16 @@
 
 <br>
 
-## 🚀 Tecnologias utilizadas:
+## :star: Features
+- [x] User register
+- [x] User login
+- [x] Entry and exit financial register
+- [x] Listing of financial inflows and outflows
+- [x] Total financial outflows
+- [x] Total financial entries
+- [x] Absolute total of financial inflows and outflows
+
+## 🚀 Technologies used:
 
 <p align="center">
 <img src="https://xnrzwkuslogyvxcfkyyh.supabase.in/storage/v1/object/sign/projects-technologies-icons/html5_icon.svg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy10ZWNobm9sb2dpZXMtaWNvbnMvaHRtbDVfaWNvbi5zdmciLCJpYXQiOjE2NDYyNDYxOTQsImV4cCI6MTk2MTYwNjE5NH0.-BskkaDZ3OvYWL1qdFP-dY5FmyicAcs5n6P-ItqrrLc" alt="html5"  width="70" height="70"/>
@@ -55,12 +64,6 @@
 
 <br>
 
-## :memo: Licença
+## **<p align="center">Starting the walk to be able to participate in the marathon in this programming world 🏃‍</p>**
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/rocketseat-education/maratona-discover-01/blob/main/LICENSE.md) para mais detalhes.
-
-## **<p align="center">Muito obrigado ao pessoal da Rocketseat 🚀 pelo excelente conteúdo e didática, é nítido o impacto dessa empresa nos meus estudos 🙂</p>**
-
-## **<p align="center">Iniciando a caminhada para poder participar da maratona nesse mundo da programação 🏃‍</p>**
-
-### <p> <h2 align="center"> Mais uma aplicação realizada por Matheus da Cruz 👨‍💻 </h2> </p>
+### <p> <h2 align="center">Another application made by Matheus da Cruz 👨‍💻 </h2> </p>
