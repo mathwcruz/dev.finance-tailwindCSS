@@ -6,11 +6,7 @@
 
 ## **<h2 align="center">Front end application 📟 👨‍💻</h2>**
 
-## <p><h2 align="center">Financial control project developed at the Discover Marathon taught by [Rocketseat](https://app.rocketseat.com.br/dashboard)</h2> </p>
-
-## **<h2 align="center">I went beyond the proposed challenge</h2>**
-
-### <h3 align="center">In addition to adding new features to the project: registration and login page, all application styling was done using the framework [TailwindCSS](https://tailwindcss.com/docs)</h3>
+## <p><h2 align="center">Financial control project</h2> </p>
 
 # **Registration and login page - Desktop Layout** 💻
 
