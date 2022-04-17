@@ -4,9 +4,9 @@
 
 <br>
 
-## **<h2 align="center">Front end application 📟 👨‍💻</h2>**
+<h2 align="center">Front end application 📟 👨‍💻</h2>
 
-## <p><h2 align="center">Financial control project</h2> </p>
+<h3 align="center">Financial control project</h3>
 
 # **Registration and login page - Desktop Layout** 💻
 
@@ -62,4 +62,4 @@
 
 ## **<p align="center">Starting the walk to be able to participate in the marathon in this programming world 🏃‍</p>**
 
-### <p> <h2 align="center">Another application made by Matheus da Cruz 👨‍💻 </h2> </p>
+<h2 align="center">Another application developed by Matheus da Cruz 👨‍💻 </h2>
