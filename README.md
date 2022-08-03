@@ -15,13 +15,13 @@
 # **Dashboard - Desktop Layout** 💻
 
 <p align="center">
-  <img src="./github/desktop-dashboard.gif" width="1400px"/>
+  <img src="./github/desktop-dashboard.gif" width="100%"/>
 </p>
 
 # **Registration and login page - Mobile Layout** 📱
 
 <p align="center">
-  <img src="./github//mobile-login.gif" width="375px"/>
+  <img src="./github//mobile-login.gif" width="30%"/>
 </p>
 
 # **Dashboard - Mobile Layout** 📱
